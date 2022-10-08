@@ -683,7 +683,7 @@ h2 {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 200%;
+  line-height: 28px;
   color: #FFFFFF;
 }
 
@@ -705,12 +705,18 @@ h2 {
 }
 
 @media (max-width: 1024px) {
+  .footer {
+    padding: 25px 0 0 0;
+  }
+  .footer .container {
+    gap: 25px;
+  }
   .footer .long__line {
     display: none;
   }
   .footer .footer__top {
     order: 3;
-    padding: 13px 0 0 0;
+    padding: 12px 0 0 0;
     border-top: 1px solid #F8AC01;
     gap: 0;
     display: flex;
@@ -719,9 +725,20 @@ h2 {
   }
   .footer ul {
     order: 1;
+    gap: 0;
+  }
+  .footer ul li {
+    width: 50%;
   }
   .footer .footer__bottom {
     order: 2;
     margin: 0px;
+  }
+  .footer .footer__bottom p {
+    line-height: 22px;
+  }
+  .footer .rights {
+    padding: 25px 34px 8px 34px;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
