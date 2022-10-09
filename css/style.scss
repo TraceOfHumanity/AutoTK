@@ -929,7 +929,9 @@ margin: 20px 0 32px 0;
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
-
+      &:hover{
+        background: #F2C94C;
+      }
       &::before {
         font-size: 12px;
         font-weight: 900;
@@ -954,6 +956,9 @@ margin: 20px 0 32px 0;
       font-size: 16px;
       line-height: 25px;
       color: #FFFFFF;
+    }
+    li:hover {
+      color: #F8AC01;
     }
   }
 

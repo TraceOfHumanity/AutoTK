@@ -817,6 +817,9 @@ form .textarea:focus-within {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.footer .footer__social a:hover {
+  background: #F2C94C;
+}
 .footer .footer__social a::before {
   font-size: 12px;
   font-weight: 900;
@@ -835,6 +838,9 @@ form .textarea:focus-within {
   font-size: 16px;
   line-height: 25px;
   color: #FFFFFF;
+}
+.footer ul li:hover {
+  color: #F8AC01;
 }
 .footer .footer__bottom p {
   font-family: "Roboto";
