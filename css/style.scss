@@ -413,7 +413,8 @@ h6 {
   overflow: hidden;
   height: 215px;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: calc(1024px + (1440 - 1024) * ((100vw - 1024px) / (1440 - 1024)));
 }
 
 @media (max-width: 1024px) {
@@ -973,10 +974,27 @@ form .textarea:focus-within {
   margin-top: 6px;
 }
 
+.mostVisited {
+  background: #F4F4F4;
+
+  .middleText {}
+
+  .mostVisited__title {
+    margin-top: 20px;
+  }
+
+  .mostVisited__cars {
+    display: flex;
+    
+    flex-wrap: wrap;
+    li{
+      width: 277px;
+    }
+  }
+}
 
 
-
-
+//==index page ==========
 
 
 
@@ -1220,8 +1238,8 @@ form .textarea:focus-within {
   }
 
   .card__img {
-    width: 207px;
-    height: 135px;
+    max-width: 207px;
+    max-height: 135px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1302,11 +1320,12 @@ form .textarea:focus-within {
 }
 
 @media(max-width: 600px) {
-  .leftFloat{
+  .leftFloat {
     float: none;
     margin: 0 auto 26px;
   }
 }
+
 @media(max-width: 425px) {
   .vehicle__card {
     .card__info {

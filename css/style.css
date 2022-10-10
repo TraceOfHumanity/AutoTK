@@ -384,7 +384,8 @@ h6 {
   overflow: hidden;
   height: 215px;
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
+  width: calc(1024px + 416 * (100vw - 1024px) / 416);
 }
 
 @media (max-width: 1024px) {
@@ -856,6 +857,20 @@ form .textarea:focus-within {
   margin-top: 6px;
 }
 
+.mostVisited {
+  background: #F4F4F4;
+}
+.mostVisited .mostVisited__title {
+  margin-top: 20px;
+}
+.mostVisited .mostVisited__cars {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mostVisited .mostVisited__cars li {
+  width: 277px;
+}
+
 .hidden,
 .input.hidden {
   display: none;
@@ -1046,8 +1061,8 @@ form .textarea:focus-within {
   align-items: center;
 }
 .vehicle__card .card__img {
-  width: 207px;
-  height: 135px;
+  max-width: 207px;
+  max-height: 135px;
   overflow: hidden;
   display: flex;
   align-items: center;
