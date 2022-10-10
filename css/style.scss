@@ -650,6 +650,7 @@ p {
 .middleText {
   text-align: center;
   line-height: 22px;
+  margin-bottom: 25px;
 }
 
 .crumbs {
@@ -974,25 +975,73 @@ form .textarea:focus-within {
   margin-top: 6px;
 }
 
+//
+.brand__indexPage{
+  background: #F4F4F4;
+  padding-top: 54px;
+  padding-bottom: 39px;
+}
+
+
 .mostVisited {
   background: #F4F4F4;
-
-  .middleText {}
+  padding-top: 48px;
+  padding-bottom: 58px;
 
   .mostVisited__title {
     margin-top: 20px;
+    margin-bottom: 3px;
   }
 
   .mostVisited__cars {
     display: flex;
-    
-    flex-wrap: wrap;
-    li{
-      width: 277px;
+     flex-wrap: wrap;
+
+    li {
+      width: 315px;
+
     }
+  }
+
+  .show__allBtn {
+    text-align: center;
+    margin-top: 48px;
+
+    .show__allButton {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 22px;
+      text-align: center;
+      color: #0074B6;
+      cursor: pointer;
+      background-image: linear-gradient(to right, #0074B6 75%, transparent 75%);
+      background-position: 0 21px;
+      background-repeat: repeat-x;
+      background-size: 7px 2px;
+    }
+
   }
 }
 
+.mostVisited__title {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.mostVisited__list a {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 36px;
+  color: #2E2E2E;
+}
+
+.mostVisited__highlightedList a {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 36px;
+  color: #0074B6;
+}
 
 //==index page ==========
 
