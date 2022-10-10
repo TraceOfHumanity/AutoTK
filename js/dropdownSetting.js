@@ -16,7 +16,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
   dropDownBtn.addEventListener('click', function () {
     dropDownList.classList.toggle('dropdown__list--visible');
     dropDownArrow.classList.toggle('dropdown__arrow180');
-    this.classList.toggle('.dropdown__button--active');
+    this.classList.toggle('dropdown__button--active');
   });
 
 
@@ -32,6 +32,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
       dropDownList.classList.remove('dropdown__list--visible');
       dropDownArrow.classList.remove('dropdown__arrow180');
       dropDownWrapper.classList.remove('shadowBg');
+      dropDownBtn.classList.remove('dropdown__button--active');
 
     })
   });
