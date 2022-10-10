@@ -767,7 +767,8 @@ p {
 form .input:focus-within,
 form .textarea:focus-within {
   background-color: #ffffff;
-  box-shadow: 0px 0px 5px 1px #ababab inset, 0px 0px 12px 5px rgba(255, 255, 255, 0.5);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 0px 12px 5px rgb(255, 255, 255);
 }
 
 @media(max-width:1024px) {
