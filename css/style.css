@@ -192,7 +192,7 @@ h6 {
 .header__menu {
   display: flex;
   padding: 0 14px 0 0;
-  margin: 1px 0 0 0;
+  margin: -5px 0 0 0;
   gap: 13px;
 }
 
@@ -218,10 +218,6 @@ h6 {
   -o-transition: all 0.2s ease-in-out;
 }
 
-.header__link:hover {
-  color: var(--theme);
-}
-
 .header__right {
   display: flex;
   z-index: 3;
@@ -229,10 +225,6 @@ h6 {
   font-size: 18px;
   line-height: 21px;
   color: #1E1E1E;
-}
-
-.space {
-  margin-left: 36px;
 }
 
 .header .dropdown__button {
@@ -256,6 +248,8 @@ h6 {
 
 .header__menuItem {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .btnDropDown {
@@ -303,7 +297,7 @@ h6 {
   height: -moz-min-content;
   height: min-content;
   width: 100%;
-  top: -9px;
+  top: -1px;
   padding: 47px 0 0 0;
   z-index: 2;
   display: flex;
@@ -329,7 +323,7 @@ h6 {
 }
 .headerDropdown li {
   display: block;
-  padding: 4px 10px;
+  padding: 4px 9px;
   width: 100%;
   font-weight: 300;
   font-size: 16px;
@@ -339,6 +333,7 @@ h6 {
 
 .search__input {
   position: relative;
+  padding-top: 2px;
 }
 .search__input .input {
   position: absolute;
@@ -384,6 +379,14 @@ h6 {
   background: none;
 }
 
+.main__imgPage {
+  position: relative;
+  overflow: hidden;
+  height: 215px;
+  margin: 0 auto;
+  width: 1440px;
+}
+
 @media (max-width: 1024px) {
   body.lock {
     overflow: hidden;
@@ -399,9 +402,17 @@ h6 {
   .arrow180 {
     margin-top: 7px;
   }
+  .main__imgPage {
+    width: calc(360px + 664 * (100vw - 360px) / 664);
+    height: 215px;
+    background-size: cover;
+    background-position: top;
+  }
   .btnDropDown {
     width: 200px;
     justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
   }
   .header__menuItem {
     font-size: 24px;
@@ -713,14 +724,6 @@ form .textarea:focus-within {
     width: 100%;
   }
 }
-.main__imgPage {
-  position: relative;
-  overflow: hidden;
-  height: 215px;
-  margin: 0 auto;
-  max-width: 1440px;
-}
-
 .main__top {
   margin: 0 auto 88px;
   height: 596px;
@@ -1017,11 +1020,21 @@ form .textarea:focus-within {
   float: left;
   margin-right: 30px;
   margin-bottom: 26px;
+  width: 285px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+}
+.leftFloat img {
+  width: 100%;
 }
 
 .vehicles {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 32px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .vehicle__card {
@@ -1037,31 +1050,67 @@ form .textarea:focus-within {
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin-right: 13px;
 }
 .vehicle__card .card__img img {
   width: 100%;
+  max-height: none;
 }
 .vehicle__card .vehicle__parameters a {
   font-weight: 600;
   font-size: 22px;
   line-height: 28px;
   color: #0074B6;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .vehicle__card .card__years {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 9px;
+  margin: 18px 0 39px 0;
 }
 .vehicle__card .card__years li {
   font-weight: 300;
   line-height: 36px;
   color: #0074B6;
 }
+.vehicle__card .card__years li:last-child::after {
+  content: "...";
+  margin-left: 9px;
+  font-weight: 500;
+}
 
 .fw500 {
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  .leftFloat {
+    margin-left: 23px;
+  }
+  .vehicle__card {
+    width: 100%;
+  }
+  .vehicle__card .card__info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .vehicle__card .card__img {
+    margin: 0;
+  }
+  .vehicle__card .vehicle__parameters {
+    width: 100%;
+  }
+  .vehicle__card .card__years {
+    margin: 8px 0 39px 0;
+  }
+}
+@media (max-width: 425px) {
+  .vehicle__card .card__info {
+    align-items: center;
+  }
+}
 .form__group {
   height: 24px;
   display: flex;
