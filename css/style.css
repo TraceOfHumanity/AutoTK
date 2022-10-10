@@ -1106,6 +1106,12 @@ form .textarea:focus-within {
     margin: 8px 0 39px 0;
   }
 }
+@media (max-width: 600px) {
+  .leftFloat {
+    float: none;
+    margin: 0 auto 26px;
+  }
+}
 @media (max-width: 425px) {
   .vehicle__card .card__info {
     align-items: center;

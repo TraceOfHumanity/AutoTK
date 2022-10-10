@@ -1300,6 +1300,12 @@ form .textarea:focus-within {
   }
 }
 
+@media(max-width: 600px) {
+  .leftFloat{
+    float: none;
+    margin: 0 auto 26px;
+  }
+}
 @media(max-width: 425px) {
   .vehicle__card {
     .card__info {
