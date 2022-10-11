@@ -848,7 +848,19 @@ form .textarea:focus-within {
   justify-content: center;
   align-items: center;
 }
-.perfectCar__example:hover {
+.perfectCar__example .example__img {
+  height: 65px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.perfectCar__example img {
+  width: 100%;
+  max-height: none;
+}
+
+.perfectCar__example:hover,
+.brand__slide:hover {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -864,7 +876,7 @@ form .textarea:focus-within {
   padding-bottom: 39px;
 }
 .brand__indexPage .brand__slider {
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   /* Слайдер */
   /* Слайдер запущен */
@@ -896,12 +908,24 @@ form .textarea:focus-within {
   position: absolute;
   top: 50%;
   z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 0;
 }
 .brand__indexPage .brand__slider .slick-arrow.slick-prev {
+  background: url(../img/leftSliderArrow.png);
   left: 0;
+  width: 8px;
+  height: 16px;
 }
 .brand__indexPage .brand__slider .slick-arrow.slick-next {
+  background: url(../img/rightSliderArrow.png);
   right: 0;
+  width: 8px;
+  height: 16px;
 }
 .brand__indexPage .brand__slide {
   display: flex;
@@ -925,12 +949,100 @@ form .textarea:focus-within {
 }
 .brand__indexPage .brand__img img {
   width: 100%;
+  max-height: none;
 }
 
 .brand__list.mostVisited__cars li {
   width: 193px;
 }
 
+.reviews {
+  padding-top: 83px;
+  padding-bottom: 103px;
+}
+.reviews .reviews__slider {
+  position: relative;
+  overflow-x: hidden;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.reviews .reviews__slider .slick-track {
+  display: flex;
+  width: 105%;
+  transition: all 0s ease-in;
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+}
+.reviews .reviews__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+.reviews .reviews__slider .slick-arrow.slick-prev {
+  background-image: url(../img/leftSliderArrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.reviews .reviews__slider .slick-arrow.slick-next {
+  background-image: url(../img/rightSliderArrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+.reviews .reviews__slide {
+  width: 314px;
+  margin: 0 6px 0;
+}
+.reviews .reviews__img {
+  width: 314px;
+  height: 205px;
+  overflow: hidden;
+}
+.reviews .reviews__img img {
+  width: 100%;
+  max-height: none;
+}
+.reviews .reviews__title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #0074B6;
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
 .mostVisited__title {
   margin-top: 20px;
   margin-bottom: 3px;
@@ -987,6 +1099,93 @@ form .textarea:focus-within {
   color: #0074B6;
 }
 
+.news {
+  padding-top: 83px;
+  padding-bottom: 103px;
+}
+.news .news__slider {
+  position: relative;
+  overflow-x: hidden;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.news .news__slider .slick-track {
+  display: flex;
+  width: 105%;
+  transition: all 0s ease-in;
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+}
+.news .news__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+.news .news__slider .slick-arrow.slick-prev {
+  background-image: url(../img/leftSliderArrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+}
+.news .news__slider .slick-arrow.slick-next {
+  background-image: url(../img/rightSliderArrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+.news .news__slide {
+  width: 314px;
+  margin: 0 6px 0;
+}
+.news .news__img {
+  width: 314px;
+  height: 205px;
+  overflow: hidden;
+}
+.news .news__img img {
+  width: 100%;
+  max-height: none;
+}
+.news .news__title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #0074B6;
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
 .hidden,
 .input.hidden {
   display: none;
