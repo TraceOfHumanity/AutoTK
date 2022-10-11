@@ -865,6 +865,7 @@ form .textarea:focus-within {
 }
 .brand__indexPage .brand__slider {
   overflow: hidden;
+  position: relative;
   /* Слайдер */
   /* Слайдер запущен */
   /* Слайдер с точками */
@@ -890,6 +891,17 @@ form .textarea:focus-within {
   -moz-transition: all 0s ease-in;
   -ms-transition: all 0s ease-in;
   -o-transition: all 0s ease-in;
+}
+.brand__indexPage .brand__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+.brand__indexPage .brand__slider .slick-arrow.slick-prev {
+  left: 0;
+}
+.brand__indexPage .brand__slider .slick-arrow.slick-next {
+  right: 0;
 }
 .brand__indexPage .brand__slide {
   display: flex;

@@ -983,6 +983,7 @@ form .textarea:focus-within {
 
   .brand__slider {
     overflow: hidden;
+    position: relative;
    
     /* Слайдер */
     .slick-slider {}
@@ -1022,13 +1023,21 @@ form .textarea:focus-within {
     .slick-slide.slick-cloned {}
 
     /* Стрелка */
-    .slick-arrow {}
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+    }
 
     /* Стрелка влево */
-    .slick-arrow.slick-prev {}
+    .slick-arrow.slick-prev {
+      left: 0;
+    }
 
     /* Стрелка вправо */
-    .slick-arrow.slick-next {}
+    .slick-arrow.slick-next {
+      right: 0;
+    }
 
     /* Стрелка не активная */
     .slick-arrow.slick-disabled {}
