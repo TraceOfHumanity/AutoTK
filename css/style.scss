@@ -823,7 +823,7 @@ form .textarea:focus-within {
 .main__top {
   margin: 0 auto 88px;
   height: 596px;
-  max-width: 1440px;
+  width: calc(360px + (1440 - 360) * ((100vw - 360px) / (1440 - 360)));
 
   .container {
     position: relative;
@@ -881,6 +881,7 @@ form .textarea:focus-within {
       align-items: center;
       justify-content: space-between;
       padding: 15px 7px 17px;
+      position: relative;
     }
 
     .parameters__container {
@@ -943,7 +944,56 @@ form .textarea:focus-within {
   }
 }
 
+@media(max-width:768px) {
 
+  .main__top .main__topContent {
+    width: 730px;
+    margin-top: -161px;
+
+    .main__topSubtitle {
+      bottom: 11px;
+      right: 55px;
+    }
+  }
+
+  .main__top .form {
+    margin-top: 43px;
+
+    .form__title {
+      padding: 6px 15px 3px;
+    }
+
+    .form__body {
+      flex-wrap: wrap;
+      padding: 31px 7px 16px;
+
+      .formBtn {
+        width: 100%;
+        margin-top: 26px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@media(max-width:550px) {
+  .main__top {
+    height: 559px;
+    margin: 0 auto 47px;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    width: calc(320px + (510 - 320) * ((100vw - 360px) / (550 - 360)));
+    ;
+
+    .dropdown {
+      z-index: 4;
+    }
+  }
+}
 
 .perfectCar {
   margin-top: 39px;
@@ -987,9 +1037,27 @@ form .textarea:focus-within {
   margin-top: 6px;
 }
 
+@media(max-width:550px) {
+  .perfectCar {
+    row-gap: 8px;
+    column-gap: normal;
+    justify-content: space-between;
+
+    .perfectCar__example {
+      width: 146px;
+      height: 122px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 //
 
 .brand__indexPage {
+  margin-top: 100px;
   background: #F4F4F4;
   padding-top: 54px;
   padding-bottom: 39px;
@@ -1152,7 +1220,12 @@ form .textarea:focus-within {
     }
 
     /* Слайд */
-    .slick-slide {}
+    .slick-slide {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
 
     /* Слайд активный (показывается) */
     .slick-slide.slick-active {}
@@ -1326,7 +1399,7 @@ form .textarea:focus-within {
 
 .news {
   padding-top: 83px;
-  padding-bottom: 103px;
+  padding-bottom: 0px;
 
   .news__slider {
     position: relative;
@@ -1356,7 +1429,12 @@ form .textarea:focus-within {
     }
 
     /* Слайд */
-    .slick-slide {}
+    .slick-slide {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
 
     /* Слайд активный (показывается) */
     .slick-slide.slick-active {}
@@ -1445,8 +1523,8 @@ form .textarea:focus-within {
     .theme {
       position: absolute;
       width: 95%;
-       bottom: 8px;
-       left: 8px;
+      bottom: 8px;
+      left: 8px;
       display: flex;
       align-items: center;
       z-index: 3;
@@ -1489,6 +1567,45 @@ form .textarea:focus-within {
 
 }
 
+@media(max-width:1024px) {
+  .brand__indexPage {
+    margin-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .reviews {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}
+
+@media(max-width:993px) {
+
+  .reviews,
+  .news {
+
+    .reviews__img,
+    .news__img {
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      height: fit-content;
+      overflow: hidden;
+    }
+  }
+
+  .mostVisited {
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  .news {
+    padding-top: 41px;
+  }
+}
+
+
 //==index page ==========
 
 
@@ -1509,6 +1626,12 @@ form .textarea:focus-within {
 @media(max-width: 768px) {
   ::-webkit-scrollbar {
     width: 0px;
+  }
+
+  .dropdown {
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
   }
 
   .container {
@@ -1827,6 +1950,12 @@ form .textarea:focus-within {
       align-items: center;
     }
   }
+
+  .brand__list.mostVisited__cars {
+    li {
+      width: 50%;
+    }
+  }
 }
 
 // ========/BRAND==================
@@ -1874,6 +2003,7 @@ form .textarea:focus-within {
 
 .dropdown__arrow {
   // width: 15px;
+  pointer-events: none;
   text-align: center;
   // margin: 0 0 0 6px;
   // display: flex;
@@ -1882,6 +2012,12 @@ form .textarea:focus-within {
   right: 22px;
   bottom: 5px;
   z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .dropdown__arrow {
+    right: 8px;
+  }
 }
 
 .dropdown__arrow::before {
@@ -1961,6 +2097,7 @@ form .textarea:focus-within {
   // margin: 2px 0 0 0;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .dropdown__lists::before {

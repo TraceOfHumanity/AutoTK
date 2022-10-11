@@ -1,6 +1,6 @@
 
 // maindropDowns =======================================================================================
-document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+document.querySelectorAll('.form__group').forEach(function (dropDownWrapper) {
   const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
   const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
   const dropDownArrow = dropDownWrapper.querySelector('.dropdown__arrow');
@@ -19,7 +19,16 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
     this.classList.toggle('dropdown__button--active');
   });
 
+  dropDownWrapper.addEventListener('click', function () {
+    this.classList.toggle('absolute')
+  });
 
+  // document.addEventListener('click', function (e) {
+  //   if (e.target !== dropDownWrapper) {
+  //     this.classList.toggle('absolute');
+  //     // console.log(dropDownWrapper)
+  //   }
+  // })
 
 
   // selecting an element from the list and remembering the value + closing the list after selection
@@ -33,6 +42,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
       dropDownArrow.classList.remove('dropdown__arrow180');
       dropDownWrapper.classList.remove('shadowBg');
       dropDownBtn.classList.remove('dropdown__button--active');
+      dropDownWrapper.classList.remove('absolute');
 
     })
   });
@@ -44,6 +54,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
       dropDownBtn.classList.remove('dropdown__button--active');
       dropDownList.classList.remove('dropdown__list--visible');
       dropDownArrow.classList.remove('dropdown__arrow180');
+      dropDownWrapper.classList.remove('absolute');
     }
   })
 
