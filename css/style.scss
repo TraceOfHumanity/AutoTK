@@ -1185,7 +1185,7 @@ form .textarea:focus-within {
       -o-border-radius: 50%;
       width: 33px;
       height: 33px;
-}
+    }
 
     /* Стрелка влево */
     .slick-arrow.slick-prev {
@@ -1228,13 +1228,25 @@ form .textarea:focus-within {
   }
 
   .reviews__img {
+    position: relative;
     width: 314px;
     height: 205px;
     overflow: hidden;
-    img{
+
+    img {
       width: 100%;
       max-height: none;
     }
+  }
+
+  .reviews__img::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 9px;
+    background-image: url(../img/woterMark.svg);
+    width: 108px;
+    height: 24px;
   }
 
   .reviews__title {
@@ -1377,7 +1389,7 @@ form .textarea:focus-within {
       -o-border-radius: 50%;
       width: 33px;
       height: 33px;
-}
+    }
 
     /* Стрелка влево */
     .slick-arrow.slick-prev {
@@ -1420,13 +1432,47 @@ form .textarea:focus-within {
   }
 
   .news__img {
+    position: relative;
     width: 314px;
     height: 205px;
     overflow: hidden;
-    img{
+
+    img {
       width: 100%;
       max-height: none;
     }
+
+    .theme {
+      position: absolute;
+      width: 95%;
+       bottom: 8px;
+       left: 8px;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+
+      .theme__name {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2E2E2E;
+        background: #F8AC01;
+        border-radius: 5px;
+        padding: 5px;
+        align-items: center;
+        display: inline-block;
+      }
+
+      .theme__line {
+        background-color: #fff;
+        margin-left: 13px;
+        height: 1px;
+        display: inline-block;
+        flex-grow: 1;
+      }
+    }
+
+
   }
 
   .news__title {
