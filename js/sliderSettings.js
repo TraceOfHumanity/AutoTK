@@ -1,8 +1,9 @@
 $(document).ready(function(){
-  $('.smollImg').slick({
-    slidesToShow: 6,
+  $('.brand__slider').slick({
+    slidesToShow: 5,
     slidesToScroll: 1,
-    asNavFor: '.bigSlider',
+    infinite: true,
+
     focusOnSelect: true,
     // centerMode: true,
   });

@@ -976,51 +976,153 @@ form .textarea:focus-within {
 }
 
 //
-.brand__indexPage{
+.brand__indexPage {
   background: #F4F4F4;
   padding-top: 54px;
   padding-bottom: 39px;
+
+  .brand__slider {
+    overflow: hidden;
+   
+    /* Слайдер */
+    .slick-slider {}
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized {}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted {}
+
+    /* Ограничивающая оболочка */
+    .slick-list {}
+
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      transition: all 0s ease-in;
+      -webkit-transition: all 0s ease-in;
+      -moz-transition: all 0s ease-in;
+      -ms-transition: all 0s ease-in;
+      -o-transition: all 0s ease-in;
+    }
+
+    /* Слайд */
+    .slick-slide {}
+
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active {}
+
+    /* Слайд основной */
+    .slick-slide.slick-current {}
+
+    /* Слайд по центру */
+    .slick-slide.slick-center {}
+
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned {}
+
+    /* Стрелка */
+    .slick-arrow {}
+
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {}
+
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {}
+
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled {}
+
+    /* Точки (булиты) */
+    .slick-dots {}
+
+    .slick-dots li {}
+
+    /* Активная точка */
+    .slick-dots li.slick-active {}
+
+    /* Элемент точки */
+    .slick-dots li button {}
+    
 }
 
+  .brand__slide {
+    // width: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // height: 193px;
+
+    padding: 8px 8px 14px;
+
+    p {
+      text-align: center;
+    }
+
+  }
+
+  .brand__img {
+    width: 148px;
+    height: 148px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.brand__list.mostVisited__cars {
+  li {
+    width: 193px;
+  }
+}
+
+.mostVisited__title {
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.mostVisited__cars {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 315px;
+
+  }
+}
 
 .mostVisited {
   background: #F4F4F4;
   padding-top: 48px;
   padding-bottom: 58px;
+}
 
-  .mostVisited__title {
-    margin-top: 20px;
-    margin-bottom: 3px;
-  }
+.show__allBtn {
+  text-align: center;
+  margin-top: 48px;
 
-  .mostVisited__cars {
-    display: flex;
-     flex-wrap: wrap;
-
-    li {
-      width: 315px;
-
-    }
-  }
-
-  .show__allBtn {
+  .show__allButton {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
     text-align: center;
-    margin-top: 48px;
-
-    .show__allButton {
-      font-weight: 400;
-      font-size: 19px;
-      line-height: 22px;
-      text-align: center;
-      color: #0074B6;
-      cursor: pointer;
-      background-image: linear-gradient(to right, #0074B6 75%, transparent 75%);
-      background-position: 0 21px;
-      background-repeat: repeat-x;
-      background-size: 7px 2px;
-    }
-
+    color: #0074B6;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #0074B6 75%, transparent 75%);
+    background-position: 0 21px;
+    background-repeat: repeat-x;
+    background-size: 7px 2px;
   }
+
 }
 
 .mostVisited__title {

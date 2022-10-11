@@ -863,28 +863,86 @@ form .textarea:focus-within {
   padding-top: 54px;
   padding-bottom: 39px;
 }
+.brand__indexPage .brand__slider {
+  overflow: hidden;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
+}
+.brand__indexPage .brand__slider .slick-track {
+  display: flex;
+  transition: all 0s ease-in;
+  -webkit-transition: all 0s ease-in;
+  -moz-transition: all 0s ease-in;
+  -ms-transition: all 0s ease-in;
+  -o-transition: all 0s ease-in;
+}
+.brand__indexPage .brand__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px 14px;
+}
+.brand__indexPage .brand__slide p {
+  text-align: center;
+}
+.brand__indexPage .brand__img {
+  width: 148px;
+  height: 148px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.brand__indexPage .brand__img img {
+  width: 100%;
+}
+
+.brand__list.mostVisited__cars li {
+  width: 193px;
+}
+
+.mostVisited__title {
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.mostVisited__cars {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mostVisited__cars li {
+  width: 315px;
+}
 
 .mostVisited {
   background: #F4F4F4;
   padding-top: 48px;
   padding-bottom: 58px;
 }
-.mostVisited .mostVisited__title {
-  margin-top: 20px;
-  margin-bottom: 3px;
-}
-.mostVisited .mostVisited__cars {
-  display: flex;
-  flex-wrap: wrap;
-}
-.mostVisited .mostVisited__cars li {
-  width: 315px;
-}
-.mostVisited .show__allBtn {
+
+.show__allBtn {
   text-align: center;
   margin-top: 48px;
 }
-.mostVisited .show__allBtn .show__allButton {
+.show__allBtn .show__allButton {
   font-weight: 400;
   font-size: 19px;
   line-height: 22px;
