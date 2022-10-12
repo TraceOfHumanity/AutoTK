@@ -640,6 +640,13 @@ h2 {
   margin-bottom: 24px;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+  color: #2E2E2E;
+}
+
 p {
   font-weight: 300;
   font-size: 19px;
@@ -1724,13 +1731,13 @@ form .textarea:focus-within {
   .news__text {}
 
 
-  .pagination__topContainer{
+  .pagination__topContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 39px;
 
-     li {
+    li {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1751,20 +1758,20 @@ form .textarea:focus-within {
 
     .first-page,
     .last-page {
-    // background-color: #DADADA;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s ease;
+      // background-color: #DADADA;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+    }
+
+    .disable {
+      background-color: #F8AC01;
+    }
 
   }
 
-  .disable {
-    background-color: #F8AC01;
-  }
-
-  }
-  
   .pagination {
     // position: relative;
     width: fit-content;
@@ -1827,14 +1834,15 @@ form .textarea:focus-within {
     -moz-transform: translateX(-5px);
     -ms-transform: translateX(-5px);
     -o-transform: translateX(-5px);
-}
-.first-page:hover{
-  transform: translateX(-10px);
-  -webkit-transform: translateX(-10px);
-  -moz-transform: translateX(-10px);
-  -ms-transform: translateX(-10px);
-  -o-transform: translateX(-10px);
-}
+  }
+
+  .first-page:hover {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+  }
 
   .next-page:hover {
     transform: translateX(5px);
@@ -1842,14 +1850,15 @@ form .textarea:focus-within {
     -moz-transform: translateX(5px);
     -ms-transform: translateX(5px);
     -o-transform: translateX(5px);
-}
-.last-page:hover{
-  transform: translateX(10px);
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
-}
+  }
+
+  .last-page:hover {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+  }
 
   .current-page,
   .dots {
@@ -1868,22 +1877,26 @@ form .textarea:focus-within {
 
 
 }
-@media (max-width: 1010px){
-  .pagination__content .card-content{
+
+@media (max-width: 1010px) {
+  .pagination__content .card-content {
     justify-content: center;
   }
 }
+
 @media (max-width: 677px) {
-  
-  .pagination__content .pagination__topContainer{
+
+  .pagination__content .pagination__topContainer {
     position: relative;
     width: fit-content;
     margin: 13px auto 68px;
   }
+
   .pagination__content .pagination li,
-  .pagination__content .pagination__topContainer li{
+  .pagination__content .pagination__topContainer li {
     margin: 7px;
   }
+
   .pagination .next-page {
     position: absolute;
     top: 81px;
@@ -1897,20 +1910,96 @@ form .textarea:focus-within {
   }
 
   .first-page {
-  position: absolute;
-  top: 81px;
-  left: 0;
+    position: absolute;
+    top: 81px;
+    left: 0;
   }
 
   .last-page {
-  position: absolute;
-  top: 81px;
-  right: 0px;
+    position: absolute;
+    top: 81px;
+    right: 0px;
   }
 }
 
 // ============/blogCatalog page========
 
+
+//===========text page========================
+
+
+
+
+
+//===========/text page========================
+
+//===========model page========================
+
+.modelYears {
+  background: #F4F4F4;
+  padding: 8px 13px;
+  margin-bottom: 12px;
+
+  .years__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .years__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 36px;
+    color: #0074B6;
+
+
+  }
+
+  .years__item:not(:last-child):after {
+    content: '...';
+    color: #1E1E1E;
+    display: inline-block;
+     margin: 0 3px; 
+  }
+}
+
+.keySpec{
+  padding: 21px 19px 26px 19px;
+  background: #F4F4F4;
+}
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+}
+.type__btn {
+  cursor: pointer;
+  padding: 9px 20px;
+  background: rgba(224, 235, 236, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434343;
+  display: inline-block;
+}
+.type__btn:hover {
+  background: #F8AC01;
+}
+.main .type .selectedView {
+  background: #F8AC01;
+}
+
+.keySpec__list{
+  display: flex;
+  flex-wrap: wrap;
+
+  .keySpec__item{
+    width: 33%;
+  }
+}
+//===========/model page========================
 
 .hidden,
 .input.hidden {

@@ -575,6 +575,13 @@ h2 {
   margin-bottom: 24px;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+  color: #2E2E2E;
+}
+
 p {
   font-weight: 300;
   font-size: 19px;
@@ -1557,6 +1564,69 @@ form .textarea:focus-within {
     right: 0px;
   }
 }
+.modelYears {
+  background: #F4F4F4;
+  padding: 8px 13px;
+  margin-bottom: 12px;
+}
+.modelYears .years__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.modelYears .years__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 36px;
+  color: #0074B6;
+}
+.modelYears .years__item:not(:last-child):after {
+  content: "...";
+  color: #1E1E1E;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.keySpec {
+  padding: 21px 19px 26px 19px;
+  background: #F4F4F4;
+}
+
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+}
+
+.type__btn {
+  cursor: pointer;
+  padding: 9px 20px;
+  background: rgba(224, 235, 236, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434343;
+  display: inline-block;
+}
+
+.type__btn:hover {
+  background: #F8AC01;
+}
+
+.main .type .selectedView {
+  background: #F8AC01;
+}
+
+.keySpec__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.keySpec__list .keySpec__item {
+  width: 33%;
+}
+
 .hidden,
 .input.hidden {
   display: none;
