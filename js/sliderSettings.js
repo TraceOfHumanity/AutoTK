@@ -4,7 +4,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     // initialSlide: 3,
-    focusOnSelect: true,
+    // focusOnSelect: true,
     // centerMode: true,
     responsive: [
       {
@@ -32,7 +32,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     // initialSlide: 3,
-    focusOnSelect: true,
+    // focusOnSelect: true,
     // centerMode: true,
     responsive: [
       {
@@ -54,7 +54,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
     // initialSlide: 3,
-    focusOnSelect: true,
+    // focusOnSelect: true,
     // centerMode: true,
     responsive: [
       {

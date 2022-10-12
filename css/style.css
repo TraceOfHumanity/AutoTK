@@ -1332,7 +1332,7 @@ form .textarea:focus-within {
 }
 .pagination__content .card-content {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 19px;
 }
@@ -1345,7 +1345,6 @@ form .textarea:focus-within {
 }
 .pagination__content .news__slide {
   width: 314px;
-  margin: 0 6px 0;
 }
 .pagination__content .news__img {
   display: flex;
@@ -1395,10 +1394,44 @@ form .textarea:focus-within {
   margin-top: 19px;
   margin-bottom: 10px;
 }
-.pagination__content .pagination {
+.pagination__content .pagination__topContainer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 39px;
+}
+.pagination__content .pagination__topContainer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: #DADADA;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pagination__content .pagination__topContainer li a {
+  color: #2E2E2E;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 36px;
+}
+.pagination__content .pagination__topContainer .first-page,
+.pagination__content .pagination__topContainer .last-page {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.pagination__content .pagination__topContainer .disable {
+  background-color: #F8AC01;
+}
+.pagination__content .pagination {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
-  margin: 0 auto;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1424,26 +1457,57 @@ form .textarea:focus-within {
   font-size: 19px;
   line-height: 36px;
 }
-.pagination__content .previous-page, .pagination__content .next-page {
+.pagination__content .previous-page,
+.pagination__content .next-page {
   width: 50px;
   height: 50px;
-  border-radius: 45px;
   cursor: pointer;
   transition: 0.3s ease;
 }
-.pagination__content .next-page {
+.pagination__content .pagination .next-page {
+  margin-left: 25px;
   background-image: url(../img/nextArrowPagination.svg);
 }
-.pagination__content .previous-page {
+.pagination__content .pagination .previous-page {
+  margin-right: 25px;
   background-image: url(../img/prewArrowPagination.svg);
+}
+.pagination__content .first-page {
+  background-image: url(../img/theeArrowsLeft.svg);
+}
+.pagination__content .last-page {
+  background-image: url(../img/theeArrowsRight.svg);
 }
 .pagination__content .previous-page:hover {
   transform: translateX(-5px);
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+}
+.pagination__content .first-page:hover {
+  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
 }
 .pagination__content .next-page:hover {
   transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
 }
-.pagination__content .current-page, .pagination__content .dots {
+.pagination__content .last-page:hover {
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+.pagination__content .current-page,
+.pagination__content .dots {
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -1451,10 +1515,48 @@ form .textarea:focus-within {
 .pagination__content .pagination .active {
   background-color: #F8AC01;
 }
-.pagination__content .disable {
-  background-color: #ccc;
+.pagination__content .pagination .disable {
+  background-color: #F8AC01;
 }
 
+@media (max-width: 1010px) {
+  .pagination__content .card-content {
+    justify-content: center;
+  }
+}
+@media (max-width: 677px) {
+  .pagination__content .pagination__topContainer {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 13px auto 68px;
+  }
+  .pagination__content .pagination li,
+.pagination__content .pagination__topContainer li {
+    margin: 7px;
+  }
+  .pagination .next-page {
+    position: absolute;
+    top: 81px;
+    right: 64px;
+  }
+  .pagination .previous-page {
+    position: absolute;
+    top: 81px;
+    left: 64px;
+  }
+  .first-page {
+    position: absolute;
+    top: 81px;
+    left: 0;
+  }
+  .last-page {
+    position: absolute;
+    top: 81px;
+    right: 0px;
+  }
+}
 .hidden,
 .input.hidden {
   display: none;

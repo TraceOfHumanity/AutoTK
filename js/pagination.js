@@ -27,7 +27,7 @@ $(function () {
   var numberOfItems = $(".card-content .card").length;
   var limitPerPage = 21; 
   var totalPages = Math.ceil(numberOfItems / limitPerPage);
-  var paginationSize = 7; 
+  var paginationSize = 5; 
   var currentPage;
 
   function showPage(whichPage) {
@@ -45,14 +45,17 @@ $(function () {
           .attr({ href: "javascript:void(0)" }).text(item || "...")).insertBefore(".next-page");
     });
 
+    $(".first-page").toggleClass("disable", currentPage === 1);
     $(".previous-page").toggleClass("disable", currentPage === 1);
     $(".next-page").toggleClass("disable", currentPage === totalPages);
+    $(".last-page").toggleClass("disable", currentPage === totalPages);
+   
     return true;
   }
 
   $(".pagination").append(
-    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).addClass("arrowPage arrowPagePrew")),
-    $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).addClass("arrowPage arrowPageNext"))
+    $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).addClass("arrowPage arrowPagePrev")),
+    $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).addClass("arrowPage arrowPageNext")),
   );
 
   $(".card-content").show();
@@ -62,14 +65,19 @@ $(function () {
     return showPage(+$(this).text());
   });
 
-  $(".next-page").on("click", function () {
-    return showPage(currentPage + 1);
+  $(".first-page").on("click", function () {
+    return showPage(currentPage - currentPage + 1 );
   });
-  $(".next20").on("click", function () {
+
+  $(".next-page").on("click", function () {
     return showPage(currentPage + 1);
   });
 
   $(".previous-page").on("click", function () {
     return showPage(currentPage - 1);
+  });
+
+  $(".last-page").on("click", function () {
+    return showPage(totalPages);
   });
 });
