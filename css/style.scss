@@ -1301,6 +1301,8 @@ form .textarea:focus-within {
   }
 
   .reviews__img {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 314px;
     height: 205px;
@@ -1510,6 +1512,8 @@ form .textarea:focus-within {
   }
 
   .news__img {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 314px;
     height: 205px;
@@ -1608,6 +1612,215 @@ form .textarea:focus-within {
 
 //==index page ==========
 
+// ============blogCatalog page========
+
+.pagination__content{
+  .card-content{
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 19px;
+  }
+  
+  .card{
+    position: relative;
+    background: #fff;
+    // max-width: 325px;
+    width: 314px;
+    height: auto;
+    // margin: 25px;
+    // box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    // border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  // .card-image{
+  //   max-height: 200px;
+  // }
+  
+  // .card-image img{
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+  
+  // .card-info{
+  //   position: relative;
+  //   color: #222;
+  //   padding: 10px 20px 20px;
+  // }
+  
+  // .card-info h3{
+  //   font-size: 1.8em;
+  //   font-weight: 800;
+  //   margin-bottom: 5px;
+  // }
+  
+  // .card-info p{
+  //   font-size: 1em;
+  //   margin-bottom: 5px;
+  // }
+
+  .news__slide {
+    width: 314px;
+    margin: 0 6px 0;
+  }
+
+  .news__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 314px;
+    height: 205px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-height: none;
+    }
+
+    .theme {
+      position: absolute;
+      width: 90%;
+      bottom: 8px;
+      left: 8px;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+
+      .theme__name {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2E2E2E;
+        background: #F8AC01;
+        border-radius: 5px;
+        padding: 5px;
+        align-items: center;
+        display: inline-block;
+      }
+
+      .theme__line {
+        background-color: #fff;
+        margin-left: 13px;
+        height: 1px;
+        display: inline-block;
+        flex-grow: 1;
+      }
+    }
+
+
+  }
+
+  .news__title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #0074B6;
+    margin-top: 19px;
+    margin-bottom: 10px;
+  }
+
+  .news__text {}
+
+
+  
+  .pagination{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    user-select: none;
+    display: flex;
+justify-content: center;
+align-items: center;
+  }
+  
+  .pagination li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: #DADADA;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .pagination li a{
+    color: #2E2E2E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 36px;
+  }
+  
+  .previous-page, .next-page{
+    // background-color: #DADADA;
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+  }
+
+  .next-page{
+    background-image: url(../img/nextArrowPagination.svg);
+    
+    
+  }
+  .previous-page{
+    background-image: url(../img/prewArrowPagination.svg);
+  }
+  
+  // .arrowPage {
+  //   width: 50px;
+  //   height: 50px;
+  // }
+  
+  // .next-page::after {
+  //   content: '';
+  //   // position: absolute;
+  //   // background: url(../img/nextArrowPagination.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   z-index: 2;
+  //   width: 13px;
+  //   height: 13px;
+  //   left: 3px;
+  //   top: 80%;
+  //   transform: translateY(-50%);
+  //   -webkit-transform: translateY(-50%);
+  //   -moz-transform: translateY(-50%);
+  //   -ms-transform: translateY(-50%);
+  //   -o-transform: translateY(-50%);
+  // }
+  
+  .previous-page:hover{
+    transform: translateX(-5px);
+  }
+  
+  .next-page:hover{
+    transform: translateX(5px);
+  }
+  
+  .current-page, .dots{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .pagination .active{
+    background-color: #F8AC01;
+  }
+  
+  .disable{
+    background-color: #ccc;
+  }
+
+}
+
+// ============/blogCatalog page========
 
 
 .hidden,
