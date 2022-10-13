@@ -71,5 +71,23 @@ $(document).ready(function () {
       },
     ]
   });
+  $('.table__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    // initialSlide: 3,
+    // focusOnSelect: true,
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 0.5,
+          slidesToScroll: 0.5,
+        }
+      },
+     
+    ]
+  });
   
 });

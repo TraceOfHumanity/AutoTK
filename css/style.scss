@@ -2185,7 +2185,108 @@ form .textarea:focus-within {
 .table__cover {
 margin-top: 47px;
 margin-bottom: 100px;
+.table__slider {
+  position: relative;
+  overflow-x: hidden;
 
+  /* Слайдер */
+  .slick-slider {}
+
+  /* Слайдер запущен */
+  .slick-slider.slick-initialized {}
+
+  /* Слайдер с точками */
+  .slick-slider.slick-dotted {}
+
+  /* Ограничивающая оболочка */
+  .slick-list {}
+
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    width: 100%;
+    transition: all 0s ease-in;
+    -webkit-transition: all 0s ease-in;
+    -moz-transition: all 0s ease-in;
+    -ms-transition: all 0s ease-in;
+    -o-transition: all 0s ease-in;
+  }
+
+  /* Слайд */
+  .slick-slide {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* Слайд активный (показывается) */
+  .slick-slide.slick-active {}
+
+  /* Слайд основной */
+  .slick-slide.slick-current {}
+
+  /* Слайд по центру */
+  .slick-slide.slick-center {}
+
+  /* Клонированный слайд */
+  .slick-slide.slick-cloned {}
+
+  /* Стрелка */
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 33px;
+    height: 33px;
+  }
+
+  /* Стрелка влево */
+  .slick-arrow.slick-prev {
+    background-image: url(../img/leftSliderArrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    // width: 8px;
+    // height: 16px;
+  }
+
+  /* Стрелка вправо */
+  .slick-arrow.slick-next {
+    background-image: url(../img/rightSliderArrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    // width: 8px;
+    // height: 16px;
+  }
+
+  /* Стрелка не активная */
+  .slick-arrow.slick-disabled {}
+
+  /* Точки (булиты) */
+  .slick-dots {}
+
+  .slick-dots li {}
+
+  /* Активная точка */
+  .slick-dots li.slick-active {}
+
+  /* Элемент точки */
+  .slick-dots li button {}
+}
   table {
     margin-top: 26px;
     font-family: arial, sans-serif;
