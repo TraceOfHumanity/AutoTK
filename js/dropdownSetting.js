@@ -43,6 +43,7 @@ document.querySelectorAll('.form__group').forEach(function (dropDownWrapper) {
       dropDownWrapper.classList.remove('shadowBg');
       dropDownBtn.classList.remove('dropdown__button--active');
       dropDownWrapper.classList.remove('absolute');
+      dropDownBtn.classList.add('opacity1')
 
     })
   });

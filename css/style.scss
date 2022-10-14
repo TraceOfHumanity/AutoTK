@@ -308,7 +308,7 @@ ol li::before {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #1E1E1E;
+  color: #2E2E2E;
 }
 
 // .space {
@@ -341,7 +341,9 @@ ol li::before {
   position: relative;
   display: flex;
   align-items: center;
-
+}
+.nameDrop{
+  font-weight: 400;
 }
 
 .btnDropDown {
@@ -425,6 +427,7 @@ ol li::before {
     font-size: 16px;
     color: #1E1E1E;
     cursor: pointer;
+    line-height: 22px;
   }
 }
 
@@ -519,6 +522,9 @@ ol li::before {
   .header__menuItem {
     font-size: 24px;
     margin-bottom: 28px;
+  }
+  .nameDrop{
+    font-size: 24px;
   }
 
   .headerDropdown li {
@@ -924,7 +930,7 @@ form .textarea:focus-within {
       color: #FFFFFF;
       width: 293px;
       bottom: 27px;
-      right: -6px;
+      margin: 0;
     }
   }
 
@@ -958,7 +964,7 @@ form .textarea:focus-within {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 15px 7px 17px;
+      padding: 15px 14px 17px 7px;
       position: relative;
     }
 
@@ -1012,6 +1018,7 @@ form .textarea:focus-within {
 
   .formBtn {
     .btn {
+      font-family: "Roboto";
       width: 146px;
       font-weight: 500;
       font-size: 16px;
@@ -1227,25 +1234,34 @@ form .textarea:focus-within {
   }
 
   .brand__slide {
-    // width: 176px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    // height: 193px;
-
     padding: 8px 8px 14px;
+    height: 192px;
 
     p {
       text-align: center;
-    }
+      margin-bottom: 0px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+}
 
   }
 
   .brand__img {
-    width: 148px;
-    height: 148px;
+    max-width: 148px;
+    max-height: 148px;
+    
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -1320,13 +1336,13 @@ form .textarea:focus-within {
     /* Стрелка */
     .slick-arrow {
       position: absolute;
-      top: 50%;
+      top: 185px;
       z-index: 2;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      // -webkit-transform: translateY(-50%);
+      // -moz-transform: translateY(-50%);
+      // -ms-transform: translateY(-50%);
+      // -o-transform: translateY(-50%);
       font-size: 0;
       background-color: rgba(255, 255, 255, 0.65);
       border-radius: 50%;
@@ -1412,7 +1428,9 @@ form .textarea:focus-within {
     margin-bottom: 10px;
   }
 
-  .reviews__text {}
+  .reviews__text {
+    margin-bottom: 0px;
+  }
 
 }
 
@@ -1495,7 +1513,9 @@ form .textarea:focus-within {
 
 
 
-  .news__text {}
+  .news__text {
+    margin-bottom: 0;
+  }
 
 }
 .news {
@@ -1560,13 +1580,13 @@ form .textarea:focus-within {
     /* Стрелка */
     .slick-arrow {
       position: absolute;
-      top: 50%;
+      top: 185px;
       z-index: 2;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      // -webkit-transform: translateY(-50%);
+      // -moz-transform: translateY(-50%);
+      // -ms-transform: translateY(-50%);
+      // -o-transform: translateY(-50%);
       font-size: 0;
       background-color: rgba(255, 255, 255, 0.65);
       border-radius: 50%;
@@ -1776,7 +1796,9 @@ form .textarea:focus-within {
     margin-bottom: 10px;
   }
 
-  .news__text {}
+  .news__text {
+    margin-bottom: 0;
+  }
 
 
   .pagination__topContainer {
@@ -3185,7 +3207,8 @@ form .textarea:focus-within {
 
 @media (max-width: 768px) {
   .dropdown__arrow {
-    right: 8px;
+    // right: 8px;
+    right: 0px;
   }
 }
 
@@ -3199,15 +3222,23 @@ form .textarea:focus-within {
   // width: 15px;
 }
 
-
+.main__top .form .dropdown__button.opacity1{
+  opacity: 1;
+}
 
 .dropdown__arrow180 {
+  // right: 8px;
   bottom: 0px;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .dropdown__arrow180 {
+    right: 8px;
+  }
 }
 
 .dropdown.shadowBg::before {

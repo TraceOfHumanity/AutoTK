@@ -273,7 +273,7 @@ ol li::before {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #1E1E1E;
+  color: #2E2E2E;
 }
 
 .header .dropdown__button {
@@ -299,6 +299,10 @@ ol li::before {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.nameDrop {
+  font-weight: 400;
 }
 
 .btnDropDown {
@@ -379,6 +383,7 @@ ol li::before {
   font-size: 16px;
   color: #1E1E1E;
   cursor: pointer;
+  line-height: 22px;
 }
 
 .search__input {
@@ -468,6 +473,9 @@ ol li::before {
   .header__menuItem {
     font-size: 24px;
     margin-bottom: 28px;
+  }
+  .nameDrop {
+    font-size: 24px;
   }
   .headerDropdown li {
     font-size: 20px;
@@ -815,7 +823,7 @@ form .textarea:focus-within {
   color: #FFFFFF;
   width: 293px;
   bottom: 27px;
-  right: -6px;
+  margin: 0;
 }
 .main__top .form {
   margin-top: 12px;
@@ -846,7 +854,7 @@ form .textarea:focus-within {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 7px 17px;
+  padding: 15px 14px 17px 7px;
   position: relative;
 }
 .main__top .form .parameters__container {
@@ -890,6 +898,7 @@ form .textarea:focus-within {
   color: #FFFFFF;
 }
 .main__top .formBtn .btn {
+  font-family: "Roboto";
   width: 146px;
   font-weight: 500;
   font-size: 16px;
@@ -1051,18 +1060,30 @@ form .textarea:focus-within {
   height: 16px;
 }
 .brand__indexPage .brand__slide {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 8px 8px 14px;
+  height: 192px;
 }
 .brand__indexPage .brand__slide p {
   text-align: center;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .brand__indexPage .brand__img {
-  width: 148px;
-  height: 148px;
+  max-width: 148px;
+  max-height: 148px;
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -1121,13 +1142,8 @@ form .textarea:focus-within {
 }
 .reviews .reviews__slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 185px;
   z-index: 2;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   font-size: 0;
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 50%;
@@ -1184,6 +1200,10 @@ form .textarea:focus-within {
   margin-top: 19px;
   margin-bottom: 10px;
 }
+.reviews .reviews__text {
+  margin-bottom: 0px;
+}
+
 .mostVisited__title {
   margin-top: 20px;
   margin-bottom: 3px;
@@ -1253,6 +1273,10 @@ form .textarea:focus-within {
   width: 100%;
   max-height: none;
 }
+.news__img .news__text {
+  margin-bottom: 0;
+}
+
 .news {
   padding-top: 83px;
   padding-bottom: 0px;
@@ -1304,13 +1328,8 @@ form .textarea:focus-within {
 }
 .news .news__slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 185px;
   z-index: 2;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   font-size: 0;
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 50%;
@@ -1433,6 +1452,9 @@ form .textarea:focus-within {
   color: #0074B6;
   margin-top: 19px;
   margin-bottom: 10px;
+}
+.pagination__content .news__text {
+  margin-bottom: 0;
 }
 .pagination__content .pagination__topContainer {
   width: 100%;
@@ -2535,11 +2557,15 @@ form .textarea:focus-within {
 
 @media (max-width: 768px) {
   .dropdown__arrow {
-    right: 8px;
+    right: 0px;
   }
 }
 .dropdown__arrow::before {
   font-size: 5px;
+}
+
+.main__top .form .dropdown__button.opacity1 {
+  opacity: 1;
 }
 
 .dropdown__arrow180 {
@@ -2551,6 +2577,11 @@ form .textarea:focus-within {
   -o-transform: rotate(180deg);
 }
 
+@media (max-width: 768px) {
+  .dropdown__arrow180 {
+    right: 8px;
+  }
+}
 .dropdown.shadowBg::before {
   content: "";
   position: fixed;
