@@ -74,7 +74,8 @@ $(document).ready(function () {
   $('.table__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
+
     // initialSlide: 3,
     // focusOnSelect: true,
     // centerMode: true,
@@ -82,12 +83,14 @@ $(document).ready(function () {
       {
         breakpoint: 660,
         settings: {
+          // centerMode: true,
+          // centerPadding: '-25%',
           slidesToShow: 0.5,
           slidesToScroll: 0.5,
         }
       },
-     
+
     ]
   });
-  
+
 });
