@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-ellips:before {
+  content: "\e901";
+}
 ._icon-svg1:before {
   content: "\e900";
 }
