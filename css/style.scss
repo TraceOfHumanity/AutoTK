@@ -79,11 +79,20 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a {
   text-decoration: none;
+  // color: inherit;
+  color: #0074B6;
+}
+a:visited {
   color: inherit;
 }
+// a,
+// a:visited {
+//   text-decoration: none;
+//   // color: inherit;
+//   color: #0074B6;
+// }
 
 a:hover {
   text-decoration: none;
@@ -227,16 +236,16 @@ ol li::before {
   position: relative;
   top: -1px;
   margin: 0px 10px 0px 10px;
-  width: 10px;
-  height: 10px;
+  // width: 10px;
+  // height: 10px;
   font-size: 10px;
-  // color: red;
-  background-color: #F8AC01;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  color: #F8AC01;
+  // background-color: #F8AC01;
+  // border-radius: 50%;
+  // -webkit-border-radius: 50%;
+  // -moz-border-radius: 50%;
+  // -ms-border-radius: 50%;
+  // -o-border-radius: 50%;
 }
 
 .header__body {
@@ -709,6 +718,12 @@ p {
   color: #2E2E2E;
   margin-bottom: 20px;
 }
+a{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0074B6;
+}
 
 .middleText {
   text-align: center;
@@ -812,7 +827,7 @@ p {
 
   .btn {
     width: 222px;
-    font-size: 19px;
+    font-size: 19px;  
   }
 }
 
@@ -998,7 +1013,7 @@ form .textarea:focus-within {
   .formBtn {
     .btn {
       width: 146px;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
@@ -1476,168 +1491,168 @@ form .textarea:focus-within {
     max-height: none;
   }
 
-  .news {
-    padding-top: 83px;
-    padding-bottom: 0px;
-
-    .news__slider {
-      position: relative;
-      overflow-x: hidden;
-
-      /* Слайдер */
-      .slick-slider {}
-
-      /* Слайдер запущен */
-      .slick-slider.slick-initialized {}
-
-      /* Слайдер с точками */
-      .slick-slider.slick-dotted {}
-
-      /* Ограничивающая оболочка */
-      .slick-list {}
-
-      /* Лента слайдов */
-      .slick-track {
-        display: flex;
-        width: 105%;
-        transition: all 0s ease-in;
-        -webkit-transition: all 0s ease-in;
-        -moz-transition: all 0s ease-in;
-        -ms-transition: all 0s ease-in;
-        -o-transition: all 0s ease-in;
-      }
-
-      /* Слайд */
-      .slick-slide {
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      /* Слайд активный (показывается) */
-      .slick-slide.slick-active {}
-
-      /* Слайд основной */
-      .slick-slide.slick-current {}
-
-      /* Слайд по центру */
-      .slick-slide.slick-center {}
-
-      /* Клонированный слайд */
-      .slick-slide.slick-cloned {}
-
-      /* Стрелка */
-      .slick-arrow {
-        position: absolute;
-        top: 50%;
-        z-index: 2;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        font-size: 0;
-        background-color: rgba(255, 255, 255, 0.65);
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        width: 33px;
-        height: 33px;
-      }
-
-      /* Стрелка влево */
-      .slick-arrow.slick-prev {
-        background-image: url(../img/leftSliderArrow.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        left: 0;
-        // width: 8px;
-        // height: 16px;
-      }
-
-      /* Стрелка вправо */
-      .slick-arrow.slick-next {
-        background-image: url(../img/rightSliderArrow.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        right: 0;
-        // width: 8px;
-        // height: 16px;
-      }
-
-      /* Стрелка не активная */
-      .slick-arrow.slick-disabled {}
-
-      /* Точки (булиты) */
-      .slick-dots {}
-
-      .slick-dots li {}
-
-      /* Активная точка */
-      .slick-dots li.slick-active {}
-
-      /* Элемент точки */
-      .slick-dots li button {}
-    }
-
-    .news__slide {
-      width: 314px;
-      margin: 0 6px 0;
-    }
-
-
-
-    .theme {
-      position: absolute;
-      width: 95%;
-      bottom: 8px;
-      left: 8px;
-      display: flex;
-      align-items: center;
-      z-index: 3;
-
-      .theme__name {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        color: #2E2E2E;
-        background: #F8AC01;
-        border-radius: 5px;
-        padding: 5px;
-        align-items: center;
-        display: inline-block;
-      }
-
-      .theme__line {
-        background-color: #fff;
-        margin-left: 13px;
-        height: 1px;
-        display: inline-block;
-        flex-grow: 1;
-      }
-    }
-
-
-  }
+  
 
 
 
   .news__text {}
 
 }
+.news {
+  padding-top: 83px;
+  padding-bottom: 0px;
+  .news__title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #0074B6;
+    margin-top: 19px;
+    margin-bottom: 10px;
+  }
+  .news__slider {
+    position: relative;
+    overflow-x: hidden;
 
-.news__title {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  color: #0074B6;
-  margin-top: 19px;
-  margin-bottom: 10px;
+    /* Слайдер */
+    .slick-slider {}
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized {}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted {}
+
+    /* Ограничивающая оболочка */
+    .slick-list {}
+
+    /* Лента слайдов */
+    .slick-track {
+      display: flex;
+      width: 105%;
+      transition: all 0s ease-in;
+      -webkit-transition: all 0s ease-in;
+      -moz-transition: all 0s ease-in;
+      -ms-transition: all 0s ease-in;
+      -o-transition: all 0s ease-in;
+    }
+
+    /* Слайд */
+    .slick-slide {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    /* Слайд активный (показывается) */
+    .slick-slide.slick-active {}
+
+    /* Слайд основной */
+    .slick-slide.slick-current {}
+
+    /* Слайд по центру */
+    .slick-slide.slick-center {}
+
+    /* Клонированный слайд */
+    .slick-slide.slick-cloned {}
+
+    /* Стрелка */
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      font-size: 0;
+      background-color: rgba(255, 255, 255, 0.65);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      width: 33px;
+      height: 33px;
+    }
+
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      background-image: url(../img/leftSliderArrow.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      // width: 8px;
+      // height: 16px;
+    }
+
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      background-image: url(../img/rightSliderArrow.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      right: 0;
+      // width: 8px;
+      // height: 16px;
+    }
+
+    /* Стрелка не активная */
+    .slick-arrow.slick-disabled {}
+
+    /* Точки (булиты) */
+    .slick-dots {}
+
+    .slick-dots li {}
+
+    /* Активная точка */
+    .slick-dots li.slick-active {}
+
+    /* Элемент точки */
+    .slick-dots li button {}
+  }
+
+  .news__slide {
+    width: 314px;
+    margin: 0 6px 0;
+  }
+
+
+
+  .theme {
+    position: absolute;
+    width: 95%;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+
+    .theme__name {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2E2E2E;
+      background: #F8AC01;
+      border-radius: 5px;
+      padding: 5px;
+      align-items: center;
+      display: inline-block;
+    }
+
+    .theme__line {
+      background-color: #fff;
+      margin-left: 13px;
+      height: 1px;
+      display: inline-block;
+      flex-grow: 1;
+    }
+  }
+
+
 }
+
 
 @media(max-width:1024px) {
   .brand__indexPage {
@@ -2827,6 +2842,7 @@ form .textarea:focus-within {
       justify-content: center;
       align-items: center;
       width: 26px;
+      color: #FFFFFF;
       height: 26px;
       background: #F2F2F2;
       border-radius: 10px;
@@ -2844,11 +2860,14 @@ form .textarea:focus-within {
         font-weight: 900;
         color: #4F4F4F;
       }
+      img{
+        max-height: 12px;
+      }
     }
   }
 
 
-  ul {
+  .footer__list {
     display: flex;
     // justify-content: space-between;
     flex-wrap: wrap;
@@ -2865,7 +2884,11 @@ form .textarea:focus-within {
       color: #FFFFFF;
     }
 
-    li:hover {
+    
+    a{
+      color: #FFFFFF;
+    }
+    a:hover {
       color: #F8AC01;
     }
   }
@@ -2874,32 +2897,40 @@ form .textarea:focus-within {
     // margin: 0 0px 21px 0px;
 
     p {
-      font-family: 'Roboto';
-      font-style: normal;
+      // font-family: 'Roboto';
+      // font-style: normal;
       font-weight: 300;
       font-size: 14px;
       line-height: 28px;
       color: #FFFFFF;
+      margin-bottom: 0;
     }
   }
 
 }
 
 .rights {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
+  // font-family: 'Roboto';
+  // font-style: normal;
+  // font-weight: 300;
   font-size: 14px;
   line-height: calc(16px + (28 - 16) * ((100vw - 360px) / (1440 - 360)));
   text-align: center;
   color: #2E2E2E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 100%;
   background-color: #F5F5F5;
   padding: 19px 34px 19px 34px;
   margin: 21px 0 0 0;
+  a{
+    font-size: 14px;
+    color: #0074B6;
+  }
+  // a:visited{
+
+  // }
 }
 
 @media (max-width: 1024px) {
