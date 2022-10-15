@@ -198,29 +198,45 @@ ul li {
   position: relative;
   font-weight: 300;
   font-size: 19px;
-  line-height: 36px;
+  line-height: 28px;
+  margin-bottom: 8px;
 }
 
 ol li::before {
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 5;
+  left: -33px;
   content: counter(list) ".";
   counter-increment: list;
   color: #121212;
   background-color: #F8AC01;
   font-weight: 600;
-  margin: 0 10px 0 10px;
+  line-height: 17px;
+}
+
+ol li {
+  margin-left: 46px;
+}
+
+li._icon-ellips {
+  margin-left: 46px;
+  position: relative;
 }
 
 ._icon-ellips::before {
-  position: relative;
-  top: -1px;
-  margin: 0px 10px 0px 10px;
-  font-size: 10px;
+  position: absolute;
+  top: 8px;
+  left: -26px;
+  font-size: 14px;
   color: #F8AC01;
 }
 
+@media (max-width: 1024px) {
+  ol li,
+li._icon-ellips {
+    margin-left: 28px;
+  }
+}
 .header__body {
   width: 100%;
   position: relative;
@@ -247,6 +263,8 @@ ol li::before {
 
 .header__menu li:hover {
   background-color: #1E1E1E;
+}
+.header__menu li:hover a {
   color: #F8AC01;
 }
 
@@ -303,6 +321,7 @@ ol li::before {
 
 .nameDrop {
   font-weight: 400;
+  color: #1E1E1E;
 }
 
 .btnDropDown {
@@ -381,9 +400,11 @@ ol li::before {
   width: 100%;
   font-weight: 300;
   font-size: 16px;
-  color: #1E1E1E;
   cursor: pointer;
   line-height: 22px;
+}
+.headerDropdown a {
+  color: #1E1E1E;
 }
 
 .search__input {
@@ -477,7 +498,7 @@ ol li::before {
   .nameDrop {
     font-size: 24px;
   }
-  .headerDropdown li {
+  .headerDropdown li a {
     font-size: 20px;
   }
   .content {
@@ -638,6 +659,15 @@ h3 {
   font-size: 26px;
   line-height: 28px;
   color: #2E2E2E;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2E2E2E;
+  margin-bottom: 15px;
 }
 
 p {
@@ -1277,18 +1307,20 @@ form .textarea:focus-within {
   margin-bottom: 0;
 }
 
-.news {
-  padding-top: 83px;
-  padding-bottom: 0px;
-}
-.news .news__title {
+.news__title,
+.news__title:visited {
   display: inline-block;
   font-weight: 600;
   font-size: 22px;
   line-height: 28px;
-  color: #0074B6;
   margin-top: 19px;
   margin-bottom: 10px;
+  color: #0074B6;
+}
+
+.news {
+  padding-top: 83px;
+  padding-bottom: 0px;
 }
 .news .news__slider {
   position: relative;
@@ -1420,7 +1452,7 @@ form .textarea:focus-within {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 19px;
+  gap: 42px 19px;
 }
 .pagination__content .card {
   position: relative;
@@ -1454,7 +1486,7 @@ form .textarea:focus-within {
   margin-bottom: 10px;
 }
 .pagination__content .news__text {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 .pagination__content .pagination__topContainer {
   width: 100%;
@@ -2138,7 +2170,7 @@ form .textarea:focus-within {
   bottom: 5px;
   right: 0;
   float: right;
-  padding: 21px 10px 16px;
+  padding: 21px 10px 17px;
   scrollbar-width: 0px;
   scrollbar-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
@@ -2157,7 +2189,7 @@ form .textarea:focus-within {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-height: 362px;
+  max-height: 350px;
 }
 .latest__posts ul li {
   height: -webkit-fit-content;
@@ -2166,7 +2198,8 @@ form .textarea:focus-within {
   width: 100%;
   line-height: 19px;
   background-color: #ffffff;
-  padding: 7px 13px 6px 9px;
+  padding: 6px 13px 5px 9px;
+  margin-bottom: 0;
 }
 .latest__posts ul a {
   font-weight: 300;
@@ -2200,6 +2233,7 @@ form .textarea:focus-within {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 54px;
 }
 .post__images img {
   width: 48%;
@@ -2211,11 +2245,12 @@ form .textarea:focus-within {
   height: 277px;
   float: right;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .italic {
   font-style: italic;
-  padding: 20px 30px;
+  padding: 19px 30px 25px;
   background: #F4F4F4;
 }
 
@@ -2233,6 +2268,57 @@ form .textarea:focus-within {
   margin: 31px 0 0 0;
 }
 
+@media (max-width: 1024px) {
+  .latest__posts {
+    position: absolute;
+    width: 500px;
+    bottom: 55px;
+    left: 15px;
+    margin: 0 0 0 0;
+  }
+  #uniqueContainer {
+    padding-bottom: 468px;
+  }
+  .same {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-evenly;
+    margin: 31px 0 0 0;
+  }
+  .same p {
+    margin: 0;
+  }
+}
+@media (max-width: 680px) {
+  .post__img,
+.post__img2 {
+    float: none;
+    width: 330px;
+    height: 210px;
+    margin: 0 auto 28px;
+  }
+  .post__images {
+    justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 0;
+  }
+  .post__images img {
+    width: 45%;
+    max-height: 300px;
+  }
+  .italic {
+    padding: 15px;
+  }
+}
+@media (max-width: 534px) {
+  .latest__posts {
+    width: 330px;
+  }
+  #uniqueContainer {
+    padding-bottom: 508px;
+  }
+}
 .hidden,
 .input.hidden {
   display: none;
@@ -2421,6 +2507,9 @@ form .textarea:focus-within {
   justify-content: space-between;
   width: 100%;
 }
+.vehicles p {
+  margin-bottom: 0px;
+}
 
 .vehicle__card {
   width: 50%;
@@ -2482,9 +2571,6 @@ form .textarea:focus-within {
   .leftFloat {
     margin-left: 23px;
   }
-  .vehicle__card {
-    width: 100%;
-  }
   .vehicle__card .card__info {
     flex-direction: column;
     align-items: start;
@@ -2503,6 +2589,11 @@ form .textarea:focus-within {
   .leftFloat {
     float: none;
     margin: 0 auto 26px;
+  }
+}
+@media (max-width: 540px) {
+  .vehicle__card {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {
