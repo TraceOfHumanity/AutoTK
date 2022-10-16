@@ -237,6 +237,7 @@ ol li::before {
   font-weight: 600;
   // margin: 0 11px 0 13px;
   line-height: 17px;
+  margin-top: 8px;
 }
 
 ol li {
@@ -265,11 +266,13 @@ li._icon-ellips {
   // -ms-border-radius: 50%;
   // -o-border-radius: 50%;
 }
+
 @media (max-width: 1024px) {
+
   ol li,
   li._icon-ellips {
     margin-left: 28px;
-  
+
   }
 }
 
@@ -1490,7 +1493,7 @@ form .textarea:focus-within {
 
   li {
     width: 315px;
-
+    margin: 0;
   }
 }
 
@@ -1572,6 +1575,10 @@ form .textarea:focus-within {
   margin-top: 19px;
   margin-bottom: 10px;
   color: #0074B6;
+}
+
+p {
+  margin: 0;
 }
 
 .news {
@@ -1774,45 +1781,11 @@ form .textarea:focus-within {
   }
 
   .card {
-    position: relative;
-    background: #fff;
-    // max-width: 325px;
-    width: 314px;
-    height: auto;
-    // margin: 25px;
-    // box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-    // border-radius: 10px;
-    overflow: hidden;
+    // position: relative;
   }
 
-  // .card-image{
-  //   max-height: 200px;
-  // }
-
-  // .card-image img{
-  //   max-width: 100%;
-  //   height: auto;
-  // }
-
-  // .card-info{
-  //   position: relative;
-  //   color: #222;
-  //   padding: 10px 20px 20px;
-  // }
-
-  // .card-info h3{
-  //   font-size: 1.8em;
-  //   font-weight: 800;
-  //   margin-bottom: 5px;
-  // }
-
-  // .card-info p{
-  //   font-size: 1em;
-  //   margin-bottom: 5px;
-  // }
-
   .news__slide {
-    width: 314px;
+    // width: 314px;
     // margin: 0 6px 0;
   }
 
@@ -1820,7 +1793,8 @@ form .textarea:focus-within {
     display: flex;
     align-items: center;
     position: relative;
-    width: 314px;
+    // width: 314px;
+    width: 100%;
     height: 205px;
     overflow: hidden;
 
@@ -1835,13 +1809,13 @@ form .textarea:focus-within {
   }
 
   .news__title {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    color: #0074B6;
-    margin-top: 19px;
-    margin-bottom: 10px;
+    // display: inline-block;
+    // font-weight: 600;
+    // font-size: 22px;
+    // line-height: 28px;
+    // color: #0074B6;
+    // margin-top: 19px;
+    // margin-bottom: 10px;
   }
 
   .news__text {
@@ -2090,6 +2064,7 @@ form .textarea:focus-within {
 
   .fw500 {
     line-height: 33px;
+    margin: 0;
   }
 
   .years__list {
@@ -2104,7 +2079,13 @@ form .textarea:focus-within {
     font-size: 19px;
     line-height: 36px;
     color: #0074B6;
+    margin-bottom: 0px;
 
+    a {
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 36px;
+    }
 
   }
 
@@ -2135,6 +2116,7 @@ form .textarea:focus-within {
   color: #434343;
   display: inline-block;
   height: fit-content;
+  margin: 0;
 }
 
 .type__btn:hover {
@@ -2164,7 +2146,7 @@ form .textarea:focus-within {
 .keySpec {
   padding: 21px 19px 28px 19px;
   background: #F4F4F4;
-  margin-top: 33px;
+  margin-top: 12px;
 }
 
 
@@ -2176,6 +2158,15 @@ form .textarea:focus-within {
 
   .keySpec__item {
     width: 33%;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 36px;
+    margin: 0;
+
+
+    p {
+      margin: 0;
+    }
   }
 }
 
@@ -2205,6 +2196,10 @@ form .textarea:focus-within {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin-bottom: 16px;
+
+    p {
+      margin: 0;
+    }
   }
 
   .rating__text {
@@ -2212,6 +2207,7 @@ form .textarea:focus-within {
 
     .pt19 {
       margin-top: 19px;
+      margin-bottom: 0;
     }
   }
 
@@ -2220,6 +2216,10 @@ form .textarea:focus-within {
     padding: 14px 16px 18px;
     margin-top: 7px;
 
+    p {
+      margin-bottom: 0px;
+    }
+
     .fw500 {
       margin-bottom: 0px;
     }
@@ -2227,11 +2227,16 @@ form .textarea:focus-within {
 
 
   .rating__tableList {
+    li {
+      margin: 0;
 
+    }
 
     p {
       width: 140px;
       text-align: center;
+      margin: 0;
+
     }
 
     a {
@@ -2254,6 +2259,7 @@ form .textarea:focus-within {
 .seeDetailReview {
   margin-top: 41px;
   text-align: center;
+  margin-bottom: 0px;
 
   a {
     display: inline-block;
@@ -2309,9 +2315,10 @@ form .textarea:focus-within {
     display: flex;
     align-items: center;
     overflow: hidden;
+    justify-content: center;
 
     img {
-      width: 100%;
+      // width: 100%;
     }
   }
 
@@ -2501,6 +2508,10 @@ form .textarea:focus-within {
   table .carTable__parameters {
     background: rgba(248, 172, 1, 0.15);
 
+    p {
+      margin-bottom: 0px;
+    }
+
     td {
       border: 8px solid #ffffff;
       border-top: none;
@@ -2597,7 +2608,19 @@ form .textarea:focus-within {
   }
 }
 
-@media(max-width:846px) {
+@media(max-width: 1024px){
+  .specs {
+
+    .specs__parameters {
+
+      span {
+        width: fit-content;
+      }
+    }
+
+  }
+}
+@media(max-width: 846px) {
   .offers {
     margin-top: 51px;
     flex-direction: column;
@@ -2610,6 +2633,7 @@ form .textarea:focus-within {
 
   .keySpec {
     margin-top: 37px;
+    padding: 21px 15px 28px 15px;
 
     .keySpec__list .keySpec__item {
       width: 100%;
@@ -2639,6 +2663,15 @@ form .textarea:focus-within {
       display: flex;
       width: 100%;
     }
+
+    .specs__parameters {
+      width: 100%;
+
+      // span {
+      //   width: fit-content;
+      // }
+    }
+
   }
 
   .seeDetailReview {
@@ -2815,9 +2848,6 @@ form .textarea:focus-within {
   // max-width: 325px;
   width: 314px;
   height: auto;
-  // margin: 25px;
-  // box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  // border-radius: 10px;
   overflow: hidden;
 }
 
@@ -2848,8 +2878,8 @@ form .textarea:focus-within {
     justify-content: space-evenly;
     margin: 31px 0 0 0;
 
-    p{
-      margin:0;
+    p {
+      margin: 0;
     }
   }
 }
@@ -2876,7 +2906,7 @@ form .textarea:focus-within {
     }
   }
 
-  .italic{
+  .italic {
     padding: 15px;
   }
 }
@@ -2885,12 +2915,15 @@ form .textarea:focus-within {
 
   .latest__posts {
     width: 330px;
+    width: calc(330px + (504 - 330) * ((100vw - 360px) / (534 - 360)));
+    ;
   }
 
   #uniqueContainer {
     padding-bottom: 508px;
   }
 }
+
 
 //===========/text page========================
 
@@ -3010,6 +3043,7 @@ form .textarea:focus-within {
     flex-wrap: wrap;
     gap: 0px 69px;
     // margin: 26px 0px;
+    
 
     li {
       width: 124px;
@@ -3019,6 +3053,7 @@ form .textarea:focus-within {
       font-size: 16px;
       line-height: 25px;
       color: #FFFFFF;
+      margin-bottom: 0px;
     }
 
 
@@ -3076,6 +3111,7 @@ form .textarea:focus-within {
 @media (max-width: 1024px) {
   .footer {
     padding: 25px 0 0 0;
+    margin-top: 60px;
 
     .container {
       gap: 25px;
@@ -3087,7 +3123,6 @@ form .textarea:focus-within {
 
     .footer__top {
       order: 3;
-      // margin: 27px 0 18px 0;
       padding: 12px 0 0 0;
       border-top: 1px solid #F8AC01;
       gap: 0;
@@ -3200,6 +3235,7 @@ form .textarea:focus-within {
       font-weight: 300;
       line-height: 36px;
       color: #0074B6;
+      margin-bottom: 0;
     }
 
     li:last-child::after {

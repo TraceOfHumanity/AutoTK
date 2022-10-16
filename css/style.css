@@ -212,6 +212,7 @@ ol li::before {
   background-color: #F8AC01;
   font-weight: 600;
   line-height: 17px;
+  margin-top: 8px;
 }
 
 ol li {
@@ -1245,6 +1246,7 @@ form .textarea:focus-within {
 }
 .mostVisited__cars li {
   width: 315px;
+  margin: 0;
 }
 
 .mostVisited {
@@ -1316,6 +1318,10 @@ form .textarea:focus-within {
   margin-top: 19px;
   margin-bottom: 10px;
   color: #0074B6;
+}
+
+p {
+  margin: 0;
 }
 
 .news {
@@ -1454,36 +1460,17 @@ form .textarea:focus-within {
   flex-wrap: wrap;
   gap: 42px 19px;
 }
-.pagination__content .card {
-  position: relative;
-  background: #fff;
-  width: 314px;
-  height: auto;
-  overflow: hidden;
-}
-.pagination__content .news__slide {
-  width: 314px;
-}
 .pagination__content .news__img {
   display: flex;
   align-items: center;
   position: relative;
-  width: 314px;
+  width: 100%;
   height: 205px;
   overflow: hidden;
 }
 .pagination__content .news__img img {
   width: 100%;
   max-height: none;
-}
-.pagination__content .news__title {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 28px;
-  color: #0074B6;
-  margin-top: 19px;
-  margin-bottom: 10px;
 }
 .pagination__content .news__text {
   margin-bottom: 0px;
@@ -1686,6 +1673,7 @@ form .textarea:focus-within {
 }
 .modelYears .fw500 {
   line-height: 33px;
+  margin: 0;
 }
 .modelYears .years__list {
   display: flex;
@@ -1698,6 +1686,12 @@ form .textarea:focus-within {
   font-size: 19px;
   line-height: 36px;
   color: #0074B6;
+  margin-bottom: 0px;
+}
+.modelYears .years__item a {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 36px;
 }
 .modelYears .years__item:not(:last-child):after {
   content: "...";
@@ -1726,6 +1720,7 @@ form .textarea:focus-within {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 0;
 }
 
 .type__btn:hover {
@@ -1752,7 +1747,7 @@ form .textarea:focus-within {
 .keySpec {
   padding: 21px 19px 28px 19px;
   background: #F4F4F4;
-  margin-top: 33px;
+  margin-top: 12px;
 }
 
 .keySpec__list {
@@ -1763,6 +1758,13 @@ form .textarea:focus-within {
 }
 .keySpec__list .keySpec__item {
   width: 33%;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 36px;
+  margin: 0;
+}
+.keySpec__list .keySpec__item p {
+  margin: 0;
 }
 
 .rating {
@@ -1790,23 +1792,34 @@ form .textarea:focus-within {
   -o-border-radius: 10px;
   margin-bottom: 16px;
 }
+.rating .rating_tableHeader p {
+  margin: 0;
+}
 .rating .rating__text {
   width: 100%;
 }
 .rating .rating__text .pt19 {
   margin-top: 19px;
+  margin-bottom: 0;
 }
 .rating .latestUpdates {
   background: #F4F4F4;
   padding: 14px 16px 18px;
   margin-top: 7px;
 }
+.rating .latestUpdates p {
+  margin-bottom: 0px;
+}
 .rating .latestUpdates .fw500 {
   margin-bottom: 0px;
+}
+.rating .rating__tableList li {
+  margin: 0;
 }
 .rating .rating__tableList p {
   width: 140px;
   text-align: center;
+  margin: 0;
 }
 .rating .rating__tableList a {
   line-height: 36px;
@@ -1824,6 +1837,7 @@ form .textarea:focus-within {
 .seeDetailReview {
   margin-top: 41px;
   text-align: center;
+  margin-bottom: 0px;
 }
 .seeDetailReview a {
   display: inline-block;
@@ -1871,9 +1885,7 @@ form .textarea:focus-within {
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-.specs .specs__img img {
-  width: 100%;
+  justify-content: center;
 }
 .specs .paremeters__title {
   width: 100%;
@@ -2006,6 +2018,9 @@ form .textarea:focus-within {
 .table__cover table .carTable__parameters {
   background: rgba(248, 172, 1, 0.15);
 }
+.table__cover table .carTable__parameters p {
+  margin-bottom: 0px;
+}
 .table__cover table .carTable__parameters td {
   border: 8px solid #ffffff;
   border-top: none;
@@ -2082,6 +2097,13 @@ form .textarea:focus-within {
     width: 50%;
   }
 }
+@media (max-width: 1024px) {
+  .specs .specs__parameters span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 @media (max-width: 846px) {
   .offers {
     margin-top: 51px;
@@ -2093,6 +2115,7 @@ form .textarea:focus-within {
   }
   .keySpec {
     margin-top: 37px;
+    padding: 21px 15px 28px 15px;
   }
   .keySpec .keySpec__list .keySpec__item {
     width: 100%;
@@ -2115,6 +2138,9 @@ form .textarea:focus-within {
   }
   .specs .specs__listItem {
     display: flex;
+    width: 100%;
+  }
+  .specs .specs__parameters {
     width: 100%;
   }
   .seeDetailReview {
@@ -2314,6 +2340,7 @@ form .textarea:focus-within {
 @media (max-width: 534px) {
   .latest__posts {
     width: 330px;
+    width: calc(330px + 174 * (100vw - 360px) / 174);
   }
   #uniqueContainer {
     padding-bottom: 508px;
@@ -2419,6 +2446,7 @@ form .textarea:focus-within {
   font-size: 16px;
   line-height: 25px;
   color: #FFFFFF;
+  margin-bottom: 0px;
 }
 .footer .footer__list a {
   color: #FFFFFF;
@@ -2452,6 +2480,7 @@ form .textarea:focus-within {
 @media (max-width: 1024px) {
   .footer {
     padding: 25px 0 0 0;
+    margin-top: 60px;
   }
   .footer .container {
     gap: 25px;
@@ -2548,6 +2577,7 @@ form .textarea:focus-within {
   font-weight: 300;
   line-height: 36px;
   color: #0074B6;
+  margin-bottom: 0;
 }
 .vehicle__card .card__years li:last-child::after {
   content: "...";
