@@ -2082,6 +2082,15 @@ p {
   -o-transform: translateX(-50%);
 }
 
+.arrowHideTable {
+  margin: 9px 0 0 10px;
+  display: inline-block;
+}
+
+.table__header {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .specs .specs__listItem {
     display: flex;
@@ -2264,6 +2273,44 @@ p {
 .post__images img {
   width: 48%;
   max-height: 300px;
+}
+.post__images .cover__img {
+  width: 48%;
+}
+.post__images .cover__img img {
+  width: 100px;
+}
+
+.post__images2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 54px;
+}
+.post__images2 .cover__img {
+  width: 475px;
+  height: 277px;
+}
+.post__images2 .cover__img img {
+  width: 100%;
+  max-height: none;
+}
+
+.post__images3 {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.post__images3 div {
+  width: 48%;
+  height: 277px;
+}
+
+.redLine {
+  background-color: red;
+  width: 100%;
+  display: block;
+  padding: 5px;
 }
 
 .post__img2 {
@@ -2578,11 +2625,26 @@ p {
   line-height: 36px;
   color: #0074B6;
   margin-bottom: 0;
+  cursor: pointer;
 }
-.vehicle__card .card__years li:last-child::after {
-  content: "...";
-  margin-left: 9px;
-  font-weight: 500;
+.vehicle__card .card__years .years__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vehicle__card .card__yearsMore {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.vehicle__card .hidden__years {
+  margin: 0;
+}
+
+.showMore__years ~ li {
+  display: none;
 }
 
 .fw400 {
