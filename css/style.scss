@@ -1455,7 +1455,7 @@ form .textarea:focus-within {
 //     }
 //   }
 
-  
+
 
 //   .reviews__title {
 //     display: inline-block;
@@ -1472,9 +1472,10 @@ form .textarea:focus-within {
 //   }
 
 // }
-.reviews__img{
+.reviews__img {
   position: relative;
 }
+
 .reviews__img::after {
   content: "";
   position: absolute;
@@ -1484,6 +1485,7 @@ form .textarea:focus-within {
   width: 108px;
   height: 24px;
 }
+
 //=============================================================
 .mostVisited__title {
   margin-top: 20px;
@@ -1591,6 +1593,11 @@ p {
   .news__slider {
     position: relative;
     overflow-x: hidden;
+
+    a {
+      display: inline-block;
+      width: 100%;
+    }
 
     /* Слайдер */
     .slick-slider {}
@@ -2879,7 +2886,7 @@ p {
   display: flex;
   // justify-content: space-between;
   gap: 30px;
-  
+
   flex-wrap: wrap;
 
   div {
@@ -2888,25 +2895,29 @@ p {
     height: 277px;
   }
 }
+
 @media (max-width: 1120px) {
   .post__images2 {
     gap: 11px;
+
     .cover__img {
       width: 48%;
       height: fit-content;
       max-height: 100px;
+
       img {
         width: 100%;
         max-height: none;
       }
     }
-  
+
   }
 }
+
 @media (max-width: 860px) {
   .post__images3 {
     gap: 11px;
-  
+
     div {
       // min-width: 40%;
       width: 48%;
@@ -2914,11 +2925,14 @@ p {
     }
   }
 }
-.redLine{
+
+.redLine {
   background-color: red;
   width: 100%;
-  display: block;padding: 5px;
+  display: block;
+  padding: 5px;
 }
+
 .post__img2 {
 
   width: 475px;
@@ -3355,7 +3369,7 @@ p {
   }
 }
 
-.showMore__years ~ li{
+.showMore__years~li {
   display: none;
 }
 

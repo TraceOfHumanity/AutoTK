@@ -1259,6 +1259,10 @@ p {
   /* Активная точка */
   /* Элемент точки */
 }
+.news .news__slider a {
+  display: inline-block;
+  width: 100%;
+}
 .news .news__slider .slick-track {
   display: flex;
   width: 105%;
