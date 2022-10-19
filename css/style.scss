@@ -1008,15 +1008,20 @@ form .textarea:focus-within {
     .dropdown__button {
       font-weight: 300;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 22px;
+      // line-height: 16px;
       color: #1E1E1E;
       opacity: 0.5;
-      margin-top: 8px;
+      margin-top: 11px; 
+      // margin-top: 8px; 
+      // padding: 8px 8px;
       padding: 4px 8px;
     }
 
     .dropdown__button--active {
       opacity: 1;
+      padding: 9px 8px;
+      margin-top: 21px;
     }
 
     .dropdown__arrow,
@@ -3139,7 +3144,7 @@ form .textarea:focus-within {
 }
 
 .dropdown__arrow180 {
-  bottom: 0px;
+  bottom: 8px;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -3166,13 +3171,14 @@ form .textarea:focus-within {
 }
 
 .dropdown__list {
-  z-index: 2;
+  z-index: 3;
   height: min-content;
   overflow: hidden;
   display: none;
   position: absolute;
   left: 0px;
-  top: 32px;
+  // top: 32px;
+  top: 57px;
   width: 100%;
   padding: 12px 5px 5px 5px;
   border-radius: 0px 0px 10px 10px;
@@ -3188,7 +3194,7 @@ form .textarea:focus-within {
 .dropdown__list::before {
   position: absolute;
   content: "";
-  top: 8px;
+  top: 0px;
   left: 0px;
   z-index: -1;
   width: 100%;
@@ -3209,6 +3215,7 @@ form .textarea:focus-within {
   margin: 0px 0 0 0;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 5px;
 }
 
 
