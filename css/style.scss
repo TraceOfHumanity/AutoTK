@@ -51,15 +51,11 @@ body {
   font-style: normal;
   height: 100%;
   width: 100%;
-  // font-size: 100%;
   font-size: 19px;
   line-height: 1;
-  // font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  // scrollbar-color: #F8AC01 #c8c8c8;
-  // scrollbar-width: 3px;
 
 }
 
@@ -84,20 +80,12 @@ button::-moz-focus-inner {
 
 a {
   text-decoration: none;
-  // color: inherit;
   color: #0074B6;
 }
 
 a:visited {
   color: inherit;
 }
-
-// a,
-// a:visited {
-//   text-decoration: none;
-//   // color: inherit;
-//   color: #0074B6;
-// }
 
 a:hover {
   text-decoration: none;
@@ -152,7 +140,6 @@ h6 {
   position: relative;
   width: 980px;
   margin: 0 auto;
-  // width: calc(735px + (980 - 735) * ((100vw - 769px) / (1440 - 769)));
 }
 
 .header {
@@ -176,10 +163,8 @@ h6 {
   width: 100%;
   height: 100%;
   background-color: #F5F5F5;
-  // background-color: #FFFFFF;
   z-index: 3;
 }
-
 
 .logo__img {
   position: relative;
@@ -194,13 +179,9 @@ h6 {
   line-height: 40px;
   text-transform: uppercase;
   color: #F8AC01;
-  // padding-left: 2px;
   margin: 0 0 0 0;
 }
 
-// .nameCompany__span {
-//   color: var(--theme);
-// }
 .cover__img {
   position: relative;
   display: flex;
@@ -241,7 +222,6 @@ ol li::before {
   color: #121212;
   background-color: #F8AC01;
   font-weight: 600;
-  // margin: 0 11px 0 13px;
   line-height: 17px;
   margin-top: 8px;
 }
@@ -260,17 +240,8 @@ li._icon-ellips {
   position: absolute;
   top: 8px;
   left: -26px;
-  // margin: 0px 12px 0px 19px;
-  // width: 10px;
-  // height: 10px;
   font-size: 14px;
   color: #F8AC01;
-  // background-color: #F8AC01;
-  // border-radius: 50%;
-  // -webkit-border-radius: 50%;
-  // -moz-border-radius: 50%;
-  // -ms-border-radius: 50%;
-  // -o-border-radius: 50%;
 }
 
 @media (max-width: 1024px) {
@@ -293,9 +264,6 @@ li._icon-ellips {
 .header__logo {
   position: relative;
   z-index: 5;
-  // width: 128px;
-  // margin-top: 5px;
-  // height: 31px;
 }
 
 
@@ -306,7 +274,6 @@ li._icon-ellips {
 .header__menu {
   display: flex;
   padding: 0 14px 0 0;
-  // gap: 35px;
   margin: -5px 0 0 0;
   gap: 13px;
 }
@@ -340,17 +307,12 @@ li._icon-ellips {
 
 .header__right {
   display: flex;
-  // margin: -4px 2px 0 0;
   z-index: 3;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #2E2E2E;
 }
-
-// .space {
-//   margin-left: 36px;
-// }
 
 .header {
   .dropdown__button {
@@ -374,7 +336,6 @@ li._icon-ellips {
 }
 
 .header__menuItem {
-  // width: 142px;
   position: relative;
   display: flex;
   align-items: center;
@@ -393,7 +354,6 @@ li._icon-ellips {
   z-index: 1;
   position: relative;
   padding-left: 7px;
-  // justify-content: center;
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 0 0;
@@ -407,7 +367,6 @@ li._icon-ellips {
 }
 
 .arrow {
-  // margin: -3px 0 0 6px;
   margin-top: -3px;
   margin-left: 6px;
   pointer-events: none;
@@ -460,6 +419,7 @@ li._icon-ellips {
   .headerDropdown__content {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   li {
@@ -536,9 +496,7 @@ li._icon-ellips {
   }
 
   .container {
-    // padding: 0 5px;
     width: calc(769px + (1024 - 769) * ((100vw - 769px) / (1024 - 769)));
-    // margin: 0 auto;
     padding: 0 15px;
   }
 
@@ -603,7 +561,6 @@ li._icon-ellips {
   .header__logo {
     position: relative;
     z-index: 5;
-    // width: 150px;
     height: 35px;
   }
 
@@ -734,8 +691,6 @@ li._icon-ellips {
     display: flex;
     padding: 10px;
     justify-content: center;
-    // margin: 0 0 35px 0;
-    // font-size: 30px;
   }
 }
 
@@ -858,9 +813,6 @@ a {
   margin: 0px auto;
   width: 790px;
   background: #F4F4F4;
-  // gap: 26px;
-  // background-size: cover;
-  // padding: 35px 0 38px;
 }
 
 .form__top {
@@ -870,7 +822,6 @@ a {
 
 .form__bottom {
   width: 100%;
-  // justify-content: end;
 }
 
 .input {
@@ -900,7 +851,6 @@ a {
   margin: 26px 0 32px 0;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
   font-family: 'Roboto';
-  // font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -975,13 +925,7 @@ form .textarea:focus-within {
 
 // ==========/CONTACTS===================
 
-// .main__imgPage {
-//   position: relative;
-//   overflow: hidden;
-//   height: 215px;
-//   margin: 0 auto;
-//   max-width: 1440px;
-// }
+
 
 // index page=================================================
 .main__top {
@@ -991,10 +935,8 @@ form .textarea:focus-within {
 
   .container {
     position: relative;
-    // width: 100%;
     height: 100%;
     display: flex;
-    // flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -1121,9 +1063,11 @@ form .textarea:focus-within {
       right: 55px;
     }
   }
+
   .main__top .form .dropdown__button {
     padding: 11px 8px;
   }
+
   .main__top .form {
     margin-top: 43px;
     margin-bottom: 50px;
@@ -1142,7 +1086,8 @@ form .textarea:focus-within {
         margin-bottom: 12px;
       }
     }
-    .btn{
+
+    .btn {
       margin-left: 0;
     }
   }
@@ -1372,163 +1317,9 @@ form .textarea:focus-within {
   }
 }
 
-// .reviews {
-//   padding-top: 83px;
-//   padding-bottom: 103px;
-
-//   .reviews__slider {
-//     position: relative;
-//     overflow-x: hidden;
-
-//     /* Слайдер */
-//     .slick-slider {}
-
-//     /* Слайдер запущен */
-//     .slick-slider.slick-initialized {}
-
-//     /* Слайдер с точками */
-//     .slick-slider.slick-dotted {}
-
-//     /* Ограничивающая оболочка */
-//     .slick-list {}
-
-//     /* Лента слайдов */
-//     .slick-track {
-//       display: flex;
-//       width: 105%;
-//       transition: all 0s ease-in;
-//       -webkit-transition: all 0s ease-in;
-//       -moz-transition: all 0s ease-in;
-//       -ms-transition: all 0s ease-in;
-//       -o-transition: all 0s ease-in;
-//     }
-
-//     /* Слайд */
-//     .slick-slide {
-//       display: flex;
-//       justify-content: start;
-//       align-items: flex-start;
-//       flex-direction: column;
-//     }
-
-//     /* Слайд активный (показывается) */
-//     .slick-slide.slick-active {}
-
-//     /* Слайд основной */
-//     .slick-slide.slick-current {}
-
-//     /* Слайд по центру */
-//     .slick-slide.slick-center {}
-
-//     /* Клонированный слайд */
-//     .slick-slide.slick-cloned {}
-
-//     /* Стрелка */
-//     .slick-arrow {
-//       position: absolute;
-//       top: 185px;
-//       z-index: 2;
-//       // transform: translateY(-50%);
-//       // -webkit-transform: translateY(-50%);
-//       // -moz-transform: translateY(-50%);
-//       // -ms-transform: translateY(-50%);
-//       // -o-transform: translateY(-50%);
-//       font-size: 0;
-//       background-color: rgba(255, 255, 255, 0.65);
-//       border-radius: 50%;
-//       -webkit-border-radius: 50%;
-//       -moz-border-radius: 50%;
-//       -ms-border-radius: 50%;
-//       -o-border-radius: 50%;
-//       width: 33px;
-//       height: 33px;
-//     }
-
-//     /* Стрелка влево */
-//     .slick-arrow.slick-prev {
-//       background-image: url(../img/leftSliderArrow.png);
-//       background-position: center;
-//       background-repeat: no-repeat;
-//       left: 0;
-//       // width: 8px;
-//       // height: 16px;
-//     }
-
-//     /* Стрелка вправо */
-//     .slick-arrow.slick-next {
-//       background-image: url(../img/rightSliderArrow.png);
-//       background-position: center;
-//       background-repeat: no-repeat;
-//       right: 0;
-//       // width: 8px;
-//       // height: 16px;
-//     }
-
-//     /* Стрелка не активная */
-//     .slick-arrow.slick-disabled {}
-
-//     /* Точки (булиты) */
-//     .slick-dots {}
-
-//     .slick-dots li {}
-
-//     /* Активная точка */
-//     .slick-dots li.slick-active {}
-
-//     /* Элемент точки */
-//     .slick-dots li button {}
-//   }
-
-//   .reviews__slide {
-//     width: 314px;
-//     margin: 0 6px 0;
-//   }
-
-//   .reviews__img {
-//     display: flex;
-//     align-items: center;
-//     position: relative;
-//     width: 314px;
-//     height: 205px;
-//     overflow: hidden;
-
-//     img {
-//       width: 100%;
-//       max-height: none;
-//     }
-//   }
-
-
-
-//   .reviews__title {
-//     display: inline-block;
-//     font-weight: 600;
-//     font-size: 22px;
-//     line-height: 28px;
-//     color: #0074B6;
-//     margin-top: 19px;
-//     margin-bottom: 10px;
-//   }
-
-//   .reviews__text {
-//     margin-bottom: 0px;
-//   }
-
-// }
 .reviews__img {
   position: relative;
 }
-
-// .reviews__img::after {
-//   content: "";
-//   position: absolute;
-//   bottom: 5px;
-//   left: 9px;
-//   background-image: url(../img/woterMark.svg);
-//   width: 108px;
-//   height: 24px;
-// }
-
 
 //=============================================================
 .mostVisited__title {
@@ -1605,10 +1396,6 @@ form .textarea:focus-within {
     max-height: none;
   }
 
-
-
-
-
   .news__text {
     margin-bottom: 0;
   }
@@ -1643,7 +1430,6 @@ form .textarea:focus-within {
   display: flex;
   align-items: center;
   z-index: 3;
-  // width: 108px;
   height: 24px;
   overflow: hidden;
 
@@ -1726,11 +1512,6 @@ form .textarea:focus-within {
       position: absolute;
       top: 185px;
       z-index: 2;
-      // transform: translateY(-50%);
-      // -webkit-transform: translateY(-50%);
-      // -moz-transform: translateY(-50%);
-      // -ms-transform: translateY(-50%);
-      // -o-transform: translateY(-50%);
       font-size: 0;
       background-color: rgba(255, 255, 255, 0.65);
       border-radius: 50%;
@@ -1742,39 +1523,20 @@ form .textarea:focus-within {
       height: 33px;
     }
 
-    /* Стрелка влево */
     .slick-arrow.slick-prev {
       background-image: url(../img/leftSliderArrow.png);
       background-position: center;
       background-repeat: no-repeat;
       left: 0;
-      // width: 8px;
-      // height: 16px;
     }
 
-    /* Стрелка вправо */
     .slick-arrow.slick-next {
       background-image: url(../img/rightSliderArrow.png);
       background-position: center;
       background-repeat: no-repeat;
       right: 0;
-      // width: 8px;
-      // height: 16px;
     }
 
-    /* Стрелка не активная */
-    .slick-arrow.slick-disabled {}
-
-    /* Точки (булиты) */
-    .slick-dots {}
-
-    .slick-dots li {}
-
-    /* Активная точка */
-    .slick-dots li.slick-active {}
-
-    /* Элемент точки */
-    .slick-dots li button {}
   }
 
   .news__slide {
@@ -1869,20 +1631,10 @@ form .textarea:focus-within {
     gap: 42px 19px;
   }
 
-  .card {
-    // position: relative;
-  }
-
-  .news__slide {
-    // width: 314px;
-    // margin: 0 6px 0;
-  }
-
   .news__img {
     display: flex;
     align-items: center;
     position: relative;
-    // width: 314px;
     width: 100%;
     height: 205px;
     overflow: hidden;
@@ -1891,20 +1643,6 @@ form .textarea:focus-within {
       width: 100%;
       max-height: none;
     }
-
-
-
-
-  }
-
-  .news__title {
-    // display: inline-block;
-    // font-weight: 600;
-    // font-size: 22px;
-    // line-height: 28px;
-    // color: #0074B6;
-    // margin-top: 19px;
-    // margin-bottom: 10px;
   }
 
   .news__text {
@@ -1939,7 +1677,6 @@ form .textarea:focus-within {
 
     .first-page,
     .last-page {
-      // background-color: #DADADA;
       width: 50px;
       height: 50px;
       cursor: pointer;
@@ -1954,7 +1691,6 @@ form .textarea:focus-within {
   }
 
   .pagination {
-    // position: relative;
     width: fit-content;
     text-align: center;
     user-select: none;
@@ -1984,7 +1720,6 @@ form .textarea:focus-within {
 
   .previous-page,
   .next-page {
-    // background-color: #DADADA;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -2193,7 +1928,6 @@ form .textarea:focus-within {
   background: rgba(224, 235, 236, 0.8);
   border-radius: 10px;
   text-align: center;
-  // text-transform: uppercase;
   color: #434343;
   display: inline-block;
   height: fit-content;
@@ -2210,7 +1944,6 @@ form .textarea:focus-within {
 
 .offers {
   display: flex;
-  // margin-top: 40px;
 
   .offers__text p:not(:last-child) {
     margin-bottom: 16px;
@@ -2388,7 +2121,6 @@ form .textarea:focus-within {
   .specs__list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: start;
     gap: 20px 0px;
     margin-top: 26px;
     margin-bottom: 0;
@@ -2401,7 +2133,6 @@ form .textarea:focus-within {
   .specs__listItem {
     display: flex;
     width: 30%;
-    // justify-content: center;
   }
 
   .specs__img {
@@ -2412,10 +2143,6 @@ form .textarea:focus-within {
     align-items: center;
     overflow: hidden;
     justify-content: center;
-
-    img {
-      // width: 100%;
-    }
   }
 
   .paremeters__title {
@@ -2451,7 +2178,6 @@ form .textarea:focus-within {
     span {
       display: inline-block;
       width: 100%;
-      // margin-bottom: 1px;
       font-weight: 500;
     }
 
@@ -2469,7 +2195,6 @@ form .textarea:focus-within {
 .table__cover {
   position: relative;
   margin-top: 20px;
-  // margin-top: 47px;
   margin-bottom: 100px;
 
   h3 {
@@ -2480,20 +2205,6 @@ form .textarea:focus-within {
   .table__slider {
     position: relative;
     overflow-x: hidden;
-
-    /* Слайдер */
-    .slick-slider {}
-
-    /* Слайдер запущен */
-    .slick-slider.slick-initialized {}
-
-    /* Слайдер с точками */
-    .slick-slider.slick-dotted {}
-
-    /* Ограничивающая оболочка */
-    .slick-list {
-      // padding: 0 -25% 0 0;
-    }
 
     /* Лента слайдов */
     .slick-track {
@@ -2553,8 +2264,6 @@ form .textarea:focus-within {
       background-position: center;
       background-repeat: no-repeat;
       left: 0;
-      // width: 8px;
-      // height: 16px;
     }
 
     /* Стрелка вправо */
@@ -2563,8 +2272,6 @@ form .textarea:focus-within {
       background-position: center;
       background-repeat: no-repeat;
       right: 0;
-      // width: 8px;
-      // height: 16px;
     }
 
     /* Стрелка не активная */
@@ -2600,12 +2307,8 @@ form .textarea:focus-within {
     text-align: left;
     padding: 16px 20px;
     width: 25%;
-    // display: inline-block;
   }
 
-  // .two__colonTable{
-  //   column-span: ;
-  // }
   tr:nth-child(odd) {
     background-color: #F4F4F4;
   }
@@ -2624,12 +2327,6 @@ form .textarea:focus-within {
       border-bottom: none;
       padding: 12px 0;
 
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // text-align: center;
-      // vertical-align: middle;
-      // width: 100%;
       p {
         position: relative;
         top: 50%;
@@ -2694,9 +2391,6 @@ form .textarea:focus-within {
 }
 
 .arrowHideTable {
-  // position: relative;
-  // left: 0;
-  // top: 9;
   margin: 9px 0 0 10px;
   display: inline-block;
 }
@@ -2786,10 +2480,6 @@ form .textarea:focus-within {
 
     .specs__parameters {
       width: 100%;
-
-      // span {
-      //   width: fit-content;
-      // }
     }
 
   }
@@ -2799,7 +2489,6 @@ form .textarea:focus-within {
     text-align: center;
 
     a {
-      // display: inline-block;
       padding: 9px 71px;
     }
   }
@@ -2855,9 +2544,6 @@ form .textarea:focus-within {
 //===========spec page========================
 
 //===========post page========================
-// .main {
-//   position: relative;
-// }
 
 .latest__posts {
   margin: 0 0 0 35px;
@@ -2988,13 +2674,11 @@ form .textarea:focus-within {
 
 .post__images3 {
   display: flex;
-  // justify-content: space-between;
   gap: 30px;
 
   flex-wrap: wrap;
 
   div {
-    // min-width: 40%;
     width: 48%;
     height: 277px;
   }
@@ -3023,7 +2707,6 @@ form .textarea:focus-within {
     gap: 11px;
 
     div {
-      // min-width: 40%;
       width: 48%;
       height: 100px;
     }
@@ -3053,9 +2736,7 @@ form .textarea:focus-within {
 }
 
 .card {
-  // position: relative;
   background: #fff;
-  // max-width: 325px;
   width: 314px;
   height: auto;
   overflow: hidden;
@@ -3167,7 +2848,6 @@ form .textarea:focus-within {
 
   .container {
     width: calc(360px + (768 - 360) * ((100vw - 360px) / (768 - 360)));
-    // margin: 0 auto;
     padding: 0 10px;
   }
 
@@ -3181,7 +2861,6 @@ form .textarea:focus-within {
   margin-top: 76px;
   background-color: #1E1E1E;
   padding: 40px 0 0 0;
-  // background-color: #B57272;
 
   .container {
     display: flex;
@@ -3204,7 +2883,6 @@ form .textarea:focus-within {
     display: flex;
     width: 100%;
     align-items: center;
-    // gap: 58px;
   }
 
   .long__line {
@@ -3254,7 +2932,6 @@ form .textarea:focus-within {
 
   .footer__list {
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
     gap: 0px 69px;
     margin: 0px;
@@ -3282,11 +2959,8 @@ form .textarea:focus-within {
   }
 
   .footer__bottom {
-    // margin: 0 0px 21px 0px;
 
     p {
-      // font-family: 'Roboto';
-      // font-style: normal;
       font-weight: 300;
       font-size: 14px;
       line-height: 28px;
@@ -3298,16 +2972,10 @@ form .textarea:focus-within {
 }
 
 .rights {
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 300;
   font-size: 14px;
   line-height: calc(16px + (28 - 16) * ((100vw - 360px) / (1440 - 360)));
   text-align: center;
   color: #2E2E2E;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   width: 100%;
   background-color: #F5F5F5;
   padding: 19px 34px 19px 34px;
@@ -3317,10 +2985,6 @@ form .textarea:focus-within {
     font-size: 14px;
     color: #0074B6;
   }
-
-  // a:visited{
-
-  // }
 }
 
 @media (max-width: 1024px) {
@@ -3381,8 +3045,6 @@ form .textarea:focus-within {
   height: auto;
   overflow: hidden;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   img {
     width: 100%;
@@ -3403,12 +3065,10 @@ form .textarea:focus-within {
 
 .vehicle__card {
   width: 50%;
-  // margin-bottom: 20px;
 
 
   .card__info {
     display: flex;
-    // justify-content: space-between;
     align-items: center;
 
   }
@@ -3420,7 +3080,11 @@ form .textarea:focus-within {
     display: flex;
     align-items: center;
     margin-right: 13px;
-
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     img {
       width: 100%;
       max-height: none;
@@ -3463,12 +3127,6 @@ form .textarea:focus-within {
       flex-wrap: wrap;
       margin-bottom: 0;
     }
-
-    // li:last-child::after {
-    //   content: '...';
-    //   margin-left: 9px;
-    //   font-weight: 500;
-    // }
   }
 
   .card__yearsMore {
@@ -3505,7 +3163,6 @@ form .textarea:focus-within {
   }
 
   .vehicle__card {
-    // width: 100%;
 
     .card__info {
       flex-direction: column;
@@ -3560,15 +3217,12 @@ form .textarea:focus-within {
 
 .form__group {
   height: 24px;
-  // z-index: 3;
   display: flex;
   align-items: center;
 }
 
 .dropdown {
   width: 100%;
-  // width: 142px;
-  // margin: 0 0 0 0;
   position: relative;
   display: flex;
   transition: all 0.4s ease;
@@ -3598,12 +3252,8 @@ form .textarea:focus-within {
 }
 
 .dropdown__arrow {
-  // width: 15px;
   pointer-events: none;
   text-align: center;
-  // margin: 0 0 0 6px;
-  // display: flex;
-  // align-items: center;
   position: absolute;
   right: 22px;
   bottom: 5px;
@@ -3612,7 +3262,6 @@ form .textarea:focus-within {
 
 @media (max-width: 768px) {
   .dropdown__arrow {
-    // right: 8px;
     right: 6px;
     bottom: 12px;
   }
@@ -3620,12 +3269,6 @@ form .textarea:focus-within {
 
 .dropdown__arrow::before {
   font-size: 5px;
-  // pointer-events: none;
-  // position: relative;
-  // right: 6px;
-  // top: 0px;
-  // margin: 0 -7px 0 34px;
-  // width: 15px;
 }
 
 .main__top .form .dropdown__button.opacity1 {
@@ -3633,7 +3276,6 @@ form .textarea:focus-within {
 }
 
 .dropdown__arrow180 {
-  // right: 8px;
   bottom: 0px;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
@@ -3663,7 +3305,6 @@ form .textarea:focus-within {
 .dropdown__list {
   z-index: 2;
   height: min-content;
-  // max-height: 250px;
   overflow: hidden;
   display: none;
   position: absolute;
@@ -3702,12 +3343,11 @@ form .textarea:focus-within {
   overflow-y: scroll;
   height: min-content;
   max-height: 250px;
-  // margin: 2px 0 0 0;
-  margin: 17px 0 0 0;
+  margin: 0px 0 0 0;
   display: flex;
   flex-wrap: wrap;
-
 }
+
 
 .dropdown__lists::before {
   content: "";
@@ -3715,7 +3355,7 @@ form .textarea:focus-within {
   width: 94.8%;
   border-bottom: 1px solid #A9A9A9;
   left: 50%;
-  top: 15px;
+  top: 1px;
   z-index: 4;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -3723,13 +3363,20 @@ form .textarea:focus-within {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
 }
+@media (max-width: 768px) {
+  .dropdown__list .dropdown__lists {
+    margin: 17px 0 0 0;
+  }
+  .dropdown__lists::before {
+    top: 15px;
+  }
+}
 
 .dropdown__list--visible {
   display: block;
 }
 
 .dropdown__button--active {
-  // z-index: 10;
   border: 1px solid #D3D3D3;
   opacity: 1;
   background-color: #FFFFFF;
@@ -3737,11 +3384,8 @@ form .textarea:focus-within {
 }
 
 .dropdown__list-item {
-  // margin: 0 11px 0 4px;
   padding: 3px 0px 3px 3px;
-  // border-bottom: 1px solid #C9C9C9;
   cursor: pointer;
-  // display: block;
   width: 100%;
   font-family: 'Roboto';
   font-style: normal;
