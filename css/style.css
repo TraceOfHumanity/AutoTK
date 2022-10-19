@@ -2239,34 +2239,6 @@ form .textarea:focus-within {
   width: 100px;
 }
 
-.post__images2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  gap: 30px;
-  margin-bottom: 54px;
-}
-.post__images2 .cover__img {
-  width: 475px;
-  height: 277px;
-}
-.post__images2 .cover__img img {
-  width: 100%;
-  max-height: none;
-}
-
-.post__images3 {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.post__images3 div {
-  width: 48%;
-  height: 277px;
-}
-
 @media (max-width: 1120px) {
   .post__images2 {
     gap: 11px;
@@ -2364,7 +2336,7 @@ form .textarea:focus-within {
   .post__images {
     justify-content: space-between;
     margin-bottom: 14px;
-    gap: 0;
+    gap: 30px;
   }
   .post__images img {
     width: 45%;
