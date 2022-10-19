@@ -976,6 +976,9 @@ form .textarea:focus-within {
     bottom: 11px;
     right: 55px;
   }
+  .main__top .form .dropdown__button {
+    padding: 11px 8px;
+  }
   .main__top .form {
     margin-top: 43px;
     margin-bottom: 50px;
@@ -1002,7 +1005,7 @@ form .textarea:focus-within {
     position: absolute;
     top: 58px;
     left: 5px;
-    width: calc(320px + 190 * (100vw - 360px) / 190);
+    width: calc(330px + 190 * (100vw - 360px) / 190);
   }
   .absolute .dropdown {
     z-index: 4;
