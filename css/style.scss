@@ -1105,6 +1105,7 @@ form .textarea:focus-within {
       line-height: 19px;
       text-align: center;
       text-transform: uppercase;
+      margin-left: 10px;
     }
   }
 }
@@ -1140,6 +1141,9 @@ form .textarea:focus-within {
         margin-top: 26px;
         margin-bottom: 12px;
       }
+    }
+    .btn{
+      margin-left: 0;
     }
   }
 }

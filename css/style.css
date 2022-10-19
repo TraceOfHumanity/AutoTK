@@ -965,6 +965,7 @@ form .textarea:focus-within {
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -994,6 +995,9 @@ form .textarea:focus-within {
     width: 100%;
     margin-top: 26px;
     margin-bottom: 12px;
+  }
+  .main__top .form .btn {
+    margin-left: 0;
   }
 }
 @media (max-width: 550px) {
