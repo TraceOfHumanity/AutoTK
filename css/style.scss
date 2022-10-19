@@ -183,7 +183,8 @@ h6 {
 
 .logo__img {
   position: relative;
-  top: -7px;
+  top: -5px;
+  margin: 0 -1px 0 -1px;
 }
 
 .nameCompany {
@@ -211,7 +212,10 @@ h6 {
     max-height: none;
   }
 }
-
+ol, 
+ul{
+  margin-bottom: 20px;
+}
 ol {
   list-style-type: none;
   counter-reset: list;
@@ -377,6 +381,7 @@ li._icon-ellips {
 .nameDrop {
   font-weight: 400;
   color: #1E1E1E;
+  font-size: 18px;
 }
 
 .btnDropDown {
@@ -390,9 +395,12 @@ li._icon-ellips {
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 0 0;
+  color: #1e1e1e;
 
   span {
     display: inline-block;
+    position: absolute;
+    right: 15px;
   }
 }
 
@@ -549,10 +557,12 @@ li._icon-ellips {
   }
 
   .btnDropDown {
-    width: 200px;
+    width: 230px;
     justify-content: center;
+    text-align: center;
     font-weight: 400;
     font-size: 24px;
+    padding: 0 28px;
   }
 
   .header__menuItem {
@@ -761,6 +771,14 @@ h4 {
   line-height: 28px;
   color: #2E2E2E;
   margin-bottom: 15px;
+}
+
+h5{
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 36px;
+  color: #2E2E2E;
+  margin-bottom: 8px;
 }
 
 p {
@@ -1080,7 +1098,7 @@ form .textarea:focus-within {
 
   .main__top .main__topContent {
     width: 730px;
-    margin-top: -161px;
+    margin-top: 0px;
 
     .main__topSubtitle {
       bottom: 11px;
@@ -1090,6 +1108,7 @@ form .textarea:focus-within {
 
   .main__top .form {
     margin-top: 43px;
+    margin-bottom: 50px;
 
     .form__title {
       padding: 6px 15px 3px;
@@ -1116,14 +1135,17 @@ form .textarea:focus-within {
 
   .absolute {
     position: absolute;
-    top: 50px;
+    top: 58px;
     left: 5px;
     width: calc(320px + (510 - 320) * ((100vw - 360px) / (550 - 360)));
-    ;
 
     .dropdown {
       z-index: 4;
     }
+  }
+
+  .main__top .form .dropdown__button {
+    padding: 11px 8px;
   }
 }
 
@@ -1476,15 +1498,16 @@ form .textarea:focus-within {
   position: relative;
 }
 
-.reviews__img::after {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 9px;
-  background-image: url(../img/woterMark.svg);
-  width: 108px;
-  height: 24px;
-}
+// .reviews__img::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 5px;
+//   left: 9px;
+//   background-image: url(../img/woterMark.svg);
+//   width: 108px;
+//   height: 24px;
+// }
+
 
 //=============================================================
 .mostVisited__title {
@@ -1571,6 +1594,45 @@ form .textarea:focus-within {
 
 }
 
+.show__allNews {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+  text-align: center;
+  color: #0074B6;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #0074B6 75%, transparent 75%);
+  background-position: 0 21px;
+  background-repeat: repeat-x;
+  background-size: 7px 2px;
+  margin: 20px auto 0;
+  display: block;
+  width: fit-content;
+
+  &:visited {
+    color: #0074B6;
+  }
+}
+
+.waterMark {
+  position: absolute;
+  width: 95%;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  // width: 108px;
+  height: 24px;
+  overflow:hidden;
+
+  img {
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
 .news__title,
 .news__title:visited {
   display: inline-block;
@@ -1580,10 +1642,6 @@ form .textarea:focus-within {
   margin-top: 19px;
   margin-bottom: 10px;
   color: #0074B6;
-}
-
-p {
-  margin: 0;
 }
 
 .news {
@@ -2080,6 +2138,7 @@ p {
   .years__list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .years__item {
@@ -2142,7 +2201,7 @@ p {
   // margin-top: 40px;
 
   .offers__text p:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
 
   .type {
@@ -2165,6 +2224,7 @@ p {
   flex-wrap: wrap;
   margin-top: 13px;
   margin-left: 22px;
+  margin-bottom: 0;
 
   .keySpec__item {
     width: 33%;
@@ -2176,6 +2236,10 @@ p {
 
     p {
       margin: 0;
+    }
+
+    span{
+      font-weight: 500; 
     }
   }
 }
@@ -2226,17 +2290,25 @@ p {
     padding: 14px 16px 18px;
     margin-top: 7px;
 
+
+    h5{
+      font-weight:500;
+    }
     p {
       margin-bottom: 0px;
+      font-weight:400;
     }
 
-    .fw500 {
+    span {
       margin-bottom: 0px;
+      font-weight:500;
     }
   }
 
 
   .rating__tableList {
+    margin-bottom: 0;
+
     li {
       margin: 0;
 
@@ -2296,7 +2368,7 @@ p {
 
 
 .specs {
-  padding: 33px 0 35px 30px;
+  padding: 33px 30px 35px 30px;
   background: #F4F4F4;
   margin-top: 52px;
 
@@ -2306,6 +2378,7 @@ p {
     // justify-content: start;
     gap: 20px 0px;
     margin-top: 26px;
+    margin-bottom: 0;
 
     .fw500 {
       margin-bottom: 0px;
@@ -2346,6 +2419,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
+    margin-bottom: 0;
 
     .paremeters__title {
       width: 100%;
@@ -2354,6 +2428,10 @@ p {
     li {
       width: 50%;
     }
+
+    span{
+      font-weight: 500;
+    }
   }
 
   .specs__parameters {
@@ -2361,6 +2439,7 @@ p {
       display: inline-block;
       width: 100%;
       // margin-bottom: 1px;
+      font-weight: 500;
     }
 
     .fw500 {
@@ -2376,7 +2455,8 @@ p {
 
 .table__cover {
   position: relative;
-  margin-top: 47px;
+  margin-top: 20px;
+  // margin-top: 47px;
   margin-bottom: 100px;
 
   h3 {
@@ -2683,6 +2763,7 @@ p {
   }
 
   .specs {
+    padding: 33px 15px 35px 15px;
     margin-top: 63px;
 
     .specs__listItem {
@@ -2794,6 +2875,7 @@ p {
     overflow-y: scroll;
     height: fit-content;
     max-height: 350px;
+    margin-bottom: 0;
 
 
     li {
@@ -2845,6 +2927,7 @@ p {
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 54px;
+  margin-top: 28px;
 
   img {
     width: 48%;
@@ -2962,6 +3045,10 @@ p {
   flex-wrap: wrap;
   gap: 18px;
   margin: 31px 0 0 0;
+}
+
+.same__header{
+  margin-top:60px;
 }
 
 @media(max-width:1024px) {
@@ -3148,7 +3235,7 @@ p {
     // justify-content: space-between;
     flex-wrap: wrap;
     gap: 0px 69px;
-    // margin: 26px 0px;
+    margin: 0px;
 
 
     li {
@@ -3329,6 +3416,10 @@ p {
     }
 
     p {}
+
+    span{
+      font-weight: 500;
+    }
   }
 
   .card__years {
@@ -3348,6 +3439,7 @@ p {
     .years__list {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 0;
     }
 
     // li:last-child::after {
@@ -3399,7 +3491,7 @@ p {
     }
 
     .card__img {
-      margin: 0;
+      margin: 0px 0px 8px;
     }
 
     .vehicle__parameters {
@@ -3499,7 +3591,8 @@ p {
 @media (max-width: 768px) {
   .dropdown__arrow {
     // right: 8px;
-    right: 0px;
+    right: 6px;
+    bottom: 12px;
   }
 }
 
@@ -3530,6 +3623,7 @@ p {
 @media (max-width: 768px) {
   .dropdown__arrow180 {
     right: 8px;
+    bottom: 6px;
   }
 }
 
@@ -3587,6 +3681,7 @@ p {
   height: min-content;
   max-height: 250px;
   // margin: 2px 0 0 0;
+  margin: 17px 0 0 0;
   display: flex;
   flex-wrap: wrap;
 
@@ -3598,7 +3693,7 @@ p {
   width: 94.8%;
   border-bottom: 1px solid #A9A9A9;
   left: 50%;
-  top: 1px;
+  top: 15px;
   z-index: 4;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -3621,7 +3716,7 @@ p {
 
 .dropdown__list-item {
   // margin: 0 11px 0 4px;
-  padding: 6px 0px 3px 3px;
+  padding: 3px 0px 3px 3px;
   // border-bottom: 1px solid #C9C9C9;
   cursor: pointer;
   // display: block;
@@ -3630,7 +3725,7 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 22px;
   color: #1E1E1E;
 }
 
