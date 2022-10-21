@@ -2302,6 +2302,14 @@ form .textarea:focus-within {
   cursor: pointer;
 }
 
+.table__type2{
+  a,
+  a:visited{
+    display: block;
+    color: #0074B6;
+  }
+}
+
 @media (max-width:1024px) {
   .specs {
     .specs__listItem {

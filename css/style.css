@@ -2043,6 +2043,12 @@ form .textarea:focus-within {
   cursor: pointer;
 }
 
+.table__type2 a,
+.table__type2 a:visited {
+  display: block;
+  color: #0074B6;
+}
+
 @media (max-width: 1024px) {
   .specs .specs__listItem {
     display: flex;
