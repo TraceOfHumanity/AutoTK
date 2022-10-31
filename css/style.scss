@@ -2971,6 +2971,7 @@ form .textarea:focus-within {
   }
 
   .vehicle__parameters {
+    width: 50%;
     a {
       font-weight: 600;
       font-size: 22px;
@@ -2989,6 +2990,7 @@ form .textarea:focus-within {
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
+    width: 90%;
     margin: 18px 0 39px 0;
 
     li {
@@ -3073,6 +3075,9 @@ form .textarea:focus-within {
 @media(max-width: 540px) {
   .vehicle__card {
     width: 100%;
+    .card__years {
+      width: 100%;
+    }
   }
 }
 
