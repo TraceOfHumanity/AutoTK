@@ -2948,25 +2948,29 @@ form .textarea:focus-within {
 
   .card__info {
     display: flex;
-    align-items: center;
-
+    align-items: flex-start;
+    min-height: 134px;
   }
 
   .card__img {
-    max-width: 207px;
-    max-height: 135px;
+    max-width: 220px;
+    max-height: 134px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-right: 13px;
+    // margin-right: 13px;
     a{
       display: block;
       width: 100%;
       height: 100%;
     }
     img {
-      width: 100%;
+      // width: 100%;
+      // max-height: none;
+      width: 220px;
       max-height: none;
+      display: block;
+      padding-right: 13px;
     }
   }
 

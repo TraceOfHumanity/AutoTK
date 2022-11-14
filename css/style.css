@@ -2565,15 +2565,15 @@ form .textarea:focus-within {
 }
 .vehicle__card .card__info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  min-height: 134px;
 }
 .vehicle__card .card__img {
-  max-width: 207px;
-  max-height: 135px;
+  max-width: 220px;
+  max-height: 134px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin-right: 13px;
 }
 .vehicle__card .card__img a {
   display: block;
@@ -2581,8 +2581,10 @@ form .textarea:focus-within {
   height: 100%;
 }
 .vehicle__card .card__img img {
-  width: 100%;
+  width: 220px;
   max-height: none;
+  display: block;
+  padding-right: 13px;
 }
 .vehicle__card .vehicle__parameters {
   width: 50%;
